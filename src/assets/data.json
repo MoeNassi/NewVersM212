@@ -1,0 +1,20 @@
+[
+    {
+        "image": "/images/1.svg",
+        "Text": "Mission & Core Values",
+        "Description": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+        "options": "Selection Reloading"
+    },
+    {
+        "image": "/images/2.svg",
+        "Text": "Meet Our Team",
+        "Description": "Have you heard about selective realoding ? M212 now allows you to preview the change instantly without doing any server-side communication at all",
+        "options": "Selection Reloading"
+    },
+    {
+        "image": "/images/3.svg",
+        "Text": "Why Partner with M212",
+        "Description": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+        "options": "Selection Reloading"
+    }
+]

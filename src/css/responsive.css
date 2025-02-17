@@ -1,0 +1,325 @@
+@media screen and (max-width: 1831px) {
+    .dropdown > p {
+        font-size: 14px;
+    }
+    .TitleJob > h1 {
+        font-size: 60px;
+    }
+}
+@media screen and (max-width: 1789px) {
+    .MissionsSection {
+        flex-direction: column-reverse;
+    }
+    .Ourpictures, .OurMissions {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .OurMissions > span {
+        width: 10%;
+    }
+    .OurMissions > p {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 1580px) {
+    .WordFirstP > p, .WordSecondP > p {
+        font-size: 14px;
+    }
+    .ContentText {
+        height: 61.8%;
+    }
+}
+
+@media screen and (max-width: 1485px) {
+    .SecPart > h1 {
+        font-size: 40px;
+        max-width: 40%;
+    }
+    .SecPart {
+        height: 30svh;
+    }
+    .ChoosingM212 > h3 {
+        font-size: 45px;
+        max-width: 35%;
+    }
+    .dropdown > p {
+        font-size: 15px;
+    }
+    .TopBar {
+        width: 50%;
+    }
+    .FImage {
+        height: 72%;
+        width: 90%;
+    }
+    .ContentText {
+        height: 63.8%;
+    }
+    .WordFirstP > p, .WordSecondP > p {
+        font-size: 14px;
+    }
+    .bioInfo > p {
+        font-size: 14px;
+    }
+    .TitleJob > span, .TitleJobDir > span {
+        display: none;
+    }
+    .TitleJob, .TitleJobDir {
+        width: 100%;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 1350px) {
+    .bioInfo {
+        width: 25%;
+    }
+    .bioInfo > p {
+        font-size: 12px;
+    }
+    .WordFirstP > p, .WordSecondP > p {
+        font-size: 12px;
+    }
+    .headText2 > h3 {
+        width: 56% !important;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .footer {
+        flex-direction: column;
+        height: auto;
+        gap: 100px;
+        padding: 40px;
+    }
+    .firstPart, .secPart, .thirdPart {
+        width: 100%;
+        align-items: center;
+    }
+    .secPart > .options {
+        text-align: center;
+    }
+    .statusContainer > .status {
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 1160px) {
+    .TopBar {
+        width: 66%;
+    }
+    .header {
+        border-bottom-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+    }
+    .ourValues > p {
+        text-align: left !important;
+    }
+    .ourValues {
+        height: 335px;
+    }
+    .VCPartTwo {
+        display: none;
+    }
+    .VCPartOne, .VCPartTree {
+        gap: 0;
+        width: 50%;
+    }
+    .HeadVPart {
+        flex-direction: row !important;
+    }
+    .VHeadText > p {
+        max-width: 69%;
+    }
+    .TitleJob > h1 {
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 950px) {
+    .SecPart > h1 {
+        font-size: 25px;
+        max-width: 50%;
+    }
+    .SecPart {
+        height: 20svh;
+        border-bottom-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+    }
+    .ChoosingM212 > h3 {
+        font-size: 35px;
+        max-width: 30%;
+    }
+    .CustomAfter {
+        display: flex;
+    }
+    .TopBar {
+        display: none;
+    }
+    .dropdown > p:hover {
+        color: black;
+    }
+    #list {
+        opacity: 1;
+    }
+    .FounderSection {
+        flex-direction: column;
+        height: auto;
+    }
+    .ContentText {
+        flex-direction: row;
+    }
+    .WordFirstP, .WordSecondP {
+        height: 100%;
+    }
+    .RFounderS {
+        width: 100%;
+        height: 0%;
+    }
+    .LFounderS {
+        width: 70%;
+        height: 50svh;
+    }
+    .FImage {
+        height: 80%;
+    }
+    .OurMissions > p {
+        font-size: 15px !important;
+        max-width: 90%;
+    }
+    .couplePictures {
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 882px) {
+    .HomeOptions {
+        width: 600px;
+    }
+    #number {
+        width: 500px;
+    }
+    .rightPartH > p {
+        font-size: 13px !important;
+    }
+    .HomeOptions:nth-child(2) > .rightPartH {
+        width: 65% !important;
+        height: 15svh;
+    }
+    .HomeOptions:nth-child(4) > .rightPartH {
+        width: 65% !important;
+        height: 15svh;
+    }
+    .header {
+        border-bottom-left-radius: 100px;
+        border-bottom-right-radius: 100px;
+    }
+    .VContentText {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .ourValues {
+        height: auto;
+    }
+    .VCPartOne, .VCPartTree {
+        gap: 50px;
+        width: 100%;
+    }
+    .VCPartTree, .VCPartOne {
+        align-items: flex-start !important;
+    }
+    .couplePictures {
+        gap: 25px;
+    }
+    .couplePictures > img {
+        width: 90% !important;
+    }
+}
+@media screen and (max-width: 677px) {
+    .ContentText {
+        flex-direction: column;
+    }
+    .WordFirstP, .WordSecondP {
+        width: 100%;
+    }
+    .bioInfo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .headText2 {
+        flex-direction: column;
+    }
+    .headText2 > h3 {
+        width: 100% !important;
+        text-align: center;
+    }
+    .headText2 > h3::before {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40%;
+    }
+    .VHeadText > p {
+        font-size: 14px !important;
+        max-width: 75% !important;
+    }
+}
+@media screen and (max-width: 615px) {
+    .WordFirstP > p, .WordSecondP > p {
+        max-width: 95%;
+    }
+    .ourValues {
+        max-width: 82% !important;
+    }
+    #number {
+        opacity: 0;
+    }
+    .ChoosingM212 > h3 {
+        max-width: 60%;
+    }
+    .rightPartH > p {
+        max-width: 75% !important;
+    }
+    .rightPartH {
+        left: 0;
+    }
+    .indexOne, .indexTwo {
+        position: relative;
+        left: 123px;
+    }
+    .firstPart > img {
+        width: 200px;
+    }
+    .SecPart > h1 {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .CustomAfter {
+        width: 400px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .SecPart {
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+    }
+    .SecPart > h1 {
+        font-size: 14px;
+    }
+    .headText > h3 {
+        letter-spacing: 3px;
+        font-size: 15px;
+    }
+    .headText > span {
+        width: 10%;
+    }
+    .ChoosingM212 > h3 {
+        font-size: 25px;
+    }
+    .dropdownHidden p {
+        max-width: 70%;
+        font-size: 10px;
+    }
+    .CustomAfter {
+        width: 350px;
+    }
+}

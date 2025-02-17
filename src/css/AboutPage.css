@@ -1,0 +1,376 @@
+p, h1, h2, h3 {
+    pointer-events: none;
+}
+:root { /*-written by moeNassi-*/
+    --Ccyan: #71c8dc;
+    --CWhite: #f1f1f1;
+}
+.AboutContainer {
+    height: auto;
+    background-color: #1e2c2d;
+}
+.FounderSection {
+    background-color: #1e2c2d;
+    height: auto;
+    display: flex;
+}
+.LFounderS {
+    position: relative;
+    width: 25%;
+}
+.RFounderS {
+    width: 75%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    height: 840px;
+}
+.FImage {
+    width: 81%;
+    height: 85%;
+    position: absolute;
+    background-image: url('/images/founder.jpg');
+    background-position: center;
+    background-size: cover;
+    bottom: 0;
+    right: 0;
+}
+.headText2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8%;
+}
+/* i was here :D Dedi l kappa o l abdeliilaaaah kouuurbiiib taha ghanime o tagoouuzi o saad wld khali*/
+.headText2 > h3 {
+    height: 100%;
+    width: 60%;
+    font-size: 35px;
+    position: relative;
+    font-family: Font1;
+    color: white;
+    letter-spacing: 0;
+}
+.headText2 > h3::before {
+    content: '';
+    background-color: cyan;
+    position: absolute;
+    z-index: 99;
+    left: 0;
+    bottom: 0;
+    width: 15%;
+    height: 2px;
+}
+.bioInfo {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.bioInfo > p {
+    font-family: Font3;
+    color: cyan;
+    margin: 0;
+}
+.bioInfo > p:nth-child(1) {
+    color: white;
+    font-family: Font4;
+}
+.ContentText {
+    height: 76.8%;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.WordFirstP > p, .WordSecondP > p {
+    color: white;
+    text-align: justify;
+    font-family: Font1;
+    font-size: 17px;
+    max-width: 80%;
+}
+.WordFirstP, .WordSecondP {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 800px;
+}
+/*----------------------------------------------------------*/
+.ValuesSection {
+    height: auto;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.VHeadText {
+    height: 200px;
+    text-align: center;
+    font-family: Font1;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.VHeadText > h1 {
+    margin: 0;
+    font-size: 35px;
+}
+.VHeadText h1 > span {
+    color: #71c8dc;
+}
+.VHeadText > p {
+    font-family: Font3;
+    max-width: 37%;
+    font-size: 18px;
+}
+.VContentText {
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 40px;
+}
+.VCPartTree, .VCPartOne {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 40px;
+}
+.VCPartTree {
+    align-items: flex-start;
+    gap: 0;
+}
+.ourValues {
+    font-family: Font3;
+    max-width: 500px;
+    text-align: justify;
+}
+.HeadVPart {
+    height: auto;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    gap: 30px;
+}
+.logoValue {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logoValue > img {
+    width: 25px;
+}
+.HeadVPart > h2 {
+    margin: 0;
+}
+.VCPartTwo {
+    width: fit-content;
+}
+.VCPartTwo > img {
+    width: 400px;
+}
+/*---------------------Missions----------------------*/
+.MissionsSection {
+    background-color: #71c8dc;
+    height: auto;
+    display: flex;
+}
+.couplePictures {
+    height: auto;
+    width: 870px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+.couplePictures > img {
+    width: 49.5%;
+    border: 2px solid #71c8dc;
+}
+.Ourpictures {
+    width: 51%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+.OurMissions {
+    width: 49%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-family: Font1;
+}
+.OurMissions > h2 {
+    font-size: 35px;
+    position: relative;
+    margin: 10px 0;
+}
+.OurMissions > span {
+    background-color: white;
+    width: 15%;
+    height: 3px;
+}
+.OurMissions > p {
+    max-width: 61%;
+    font-size: 17px;
+    margin: 40px 0;
+}
+/*----------------------Talents---------------------------*/
+.TalentsSection {
+    background-color: var(--CWhite);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding: 40px 0;
+}
+.ourTalents {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 15px;
+    padding: 40px 0;
+    flex-wrap: wrap;
+}
+.founderCard {
+    background-color: #e0e0e0;
+    width: 450px;
+    height: 560px;
+    display: grid;
+    grid-template-rows: 1fr 200px;
+    grid-template-areas: "pic" "userInfos";
+}
+.slvsCard {
+    background-color: #e0e0e0;
+    width: 350px;
+    height: 400px;
+    display: grid;
+    grid-template-rows: 1fr 120px;
+    grid-template-areas: "picSLV" "userInfosSLV";
+}
+.employeePic {
+    grid-area: pic;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.userInfos {
+    grid-area: userInfos;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.userInfos > h1, .userInfos > p {
+    margin: 0;
+    font-family: Font3;
+}
+.userInfos > h1 > span {
+    font-family: Font1;
+}
+.userInfos > p {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.userInfos > h1 {
+    text-transform: capitalize;
+    font-size: 30px;
+}
+.employeePic > img {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-position: top;
+}
+.employeePicSLV > img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: black;
+    object-fit: cover;
+    background-position: top;
+}
+.employeePicSLV {
+    grid-area: "picSLV";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.userInfosSLV {
+    grid-area: "userInfosSLV";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.userInfosSLV> p, .userInfosSLV > h1 {
+    margin: 0;
+    font-family: Font3;
+}
+.userInfosSLV > h1 > span {
+    font-family: Font1;
+}
+.userInfosSLV > h1 {
+    font-size: 25px;
+}
+.Workers {
+    display: flex;
+    gap: 15px;
+    height: auto;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.CardsS {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.TitleJob, .TitleJobDir {
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+    width: 85%;
+}
+.TitleJobDir {
+    width: 100%;
+}
+.TitleJob > h1 {
+    font-family: font11;
+    margin: 0;
+    font-size: 70px;
+}
+.TitleJobDir > h1 {
+    font-size: 40px;
+    margin: 0;
+    font-family: font11;
+}
+.TitleJob > span, .TitleJobDir > span {
+    background-color: rgb(0, 0, 0);
+    width: 30%;
+    height: 3px;
+}
