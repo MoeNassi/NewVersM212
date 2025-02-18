@@ -53,7 +53,7 @@ export default function HeaderDrop({classname, DropClass, dropRight}: Prop) {
                 </div>:''
             }
             <div className="dropdown">
-                <p id="1" className="test" onClick={(e)=> handleBars(e, 'AboutContainer', '/aboutus')}>A propos</p>
+                <p id="1" className="test1" onClick={(e)=> handleBars(e, 'AboutContainer', '/aboutus')}>A propos</p>
                 <div className={DropClass}>
                     <p onClick={(e)=> handleBars(e, 'FounderSection', '/aboutus')}>Mot du Fondateur</p>
                     <p onClick={(e)=> handleBars(e, 'ValuesSection', '/aboutus')}>Nos Valeurs</p>
@@ -62,12 +62,12 @@ export default function HeaderDrop({classname, DropClass, dropRight}: Prop) {
                 </div>
             </div>
             <div className="dropdown">
-                <p id="2" className="test">Nos Domaines d’intervention</p>
+                <p id="2" onClick={(e)=> handleBars(e, 'DomaineContainer', '/domaine')} className="test2">Nos Domaines d’intervention</p>
                 <div className={DropClass}>
-                    <p>Consulting</p>
-                    <p>Image & Ingénierie</p>
-                    <p>Son & Eclairage</p>
-                    <p>Technique & Logistique</p>
+                    <p onClick={(e)=> handleBars(e, 'DomaineCard1', '/domaine')}>Consulting</p>
+                    <p onClick={(e)=> handleBars(e, 'DomaineCard2', '/domaine')}>Image & Ingénierie</p>
+                    <p onClick={(e)=> handleBars(e, 'DomaineCard3', '/domaine')}>Son & Eclairage</p>
+                    <p onClick={(e)=> handleBars(e, 'DomaineCard4', '/domaine')}>Technique & Logistique</p>
                 </div>
             </div>
             <div className="dropdown">

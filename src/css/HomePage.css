@@ -175,7 +175,7 @@ body, #root {
     height: 19svh;
     border-bottom-right-radius: 300px;
     border-bottom-left-radius: 300px;
-    background-color: rgb(0, 0, 0, .5);
+    background-color: rgb(0, 0, 0, .8);
     display: flex;
     justify-content: space-evenly;
 }
@@ -382,14 +382,20 @@ body, #root {
 ::-webkit-scrollbar-thumb {
     background-color: var(--cyan);
 }
+.autoscrollI {
+    transform: translateY(100%);
+    opacity: 0;
+}
 .autoscroll {
     transform: translateY(-100%);
 }
 .autoSlideR {
     transform: translateX(100%);
+    opacity: 0;
 }
 .autoSlideL {
     transform: translateX(-100%);
+    opacity: 0;
 }
 .autoShow {
     opacity: 0;

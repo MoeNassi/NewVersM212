@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react"
 import HeaderDrop from "./HeaderDrop"
 import { useNavigate } from "react-router"
 import Footer from "./footer"
+import gsap from "gsap"
 
 interface PropsValues {
     Title:string
@@ -21,7 +22,7 @@ interface CardProps {
 
 function SlaveCard({image, name, span, color, title}:CardProps) {
     return (
-        <div className="slvsCard">
+        <div id="hidden" className="slvsCard autoSlideR">
             <div className="employeePicSLV">
                 <img src={image} alt="" />
             </div>
@@ -51,8 +52,8 @@ function OurTalentsDirection() {
                     <span></span>
                 </div>
                 <div className="CardsS">
-                    <SlaveCard name="Mouhssine" span="Lamiaa" color="#71c8dc" title="directrice du developpement" image=""/>
-                    <SlaveCard name="Achway" span="Souad" color="black" title="chargée de Mission auprés de la DG" image=""/>
+                    <SlaveCard name="Mouhssine" span="Lamiaa" color="#71c8dc" title="directrice du developpement" image="/images/worker1.jpg"/>
+                    <SlaveCard name="Achway" span="Souad" color="black" title="chargée de Mission auprés de la DG" image="/images/worker1.jpg"/>
                 </div>
             </div>
         </div>
@@ -71,7 +72,7 @@ interface TalentsWorkProps {
 function OurTalentsWorkersLast({pole, names, spans, images, title, fontSize}: TalentsWorkProps) {
     return (
         <div className="Workers">
-            <div className="TitleJob">
+            <div id="hidden" className="TitleJob autoSlideL autoShow">
                 <h1>{pole}</h1>
                 <span style={{"width": fontSize}}></span>
             </div>
@@ -90,7 +91,7 @@ function OurTalentsWorkersLast({pole, names, spans, images, title, fontSize}: Ta
 function OurTalentsWorkers({pole, names, spans, images, title, fontSize}: TalentsWorkProps) {
     return (
         <div className="Workers">
-            <div className="TitleJob">
+            <div id="hidden" className="TitleJob autoSlideL">
                 <h1>{pole}</h1>
                 <span style={{"width": fontSize}}></span>
             </div>
@@ -141,6 +142,10 @@ export default function AboutPage() {
         const element = document.getElementById('1')!
         element!.classList.add('selected')
         console.log(element)
+
+        gsap.fromTo(".FImage", {"y": "100%"}, {"y": "0%", duration: 1})
+        gsap.fromTo(".headText2", {"y": "-100%", "opacity": 1}, {"y": "0%", "opacity": 1, duration: 1})
+        gsap.fromTo(".ContentText", {"opacity": 0}, {"opacity": 1, duration: 1})
     }, [])
 
     const BurgerMenu = () => {
@@ -164,6 +169,23 @@ export default function AboutPage() {
             dropRight.current?.classList.add('open')
         }
     }
+
+    const handleScroll = () => {
+        const elements = document.querySelectorAll('#hidden')
+        elements.forEach(element => {
+            const element_hei = element.getBoundingClientRect().top
+            if (element_hei < window.innerHeight - 100) {
+                element.classList.remove('autoscroll')
+                element.classList.remove('changeRadius')
+                element.classList.remove('autoscrollI')
+                element.classList.remove('autoSlideR')
+                element.classList.remove('autoSlideL')
+                element.classList.remove('autoShow')
+            }
+        })
+    }
+
+    window.onscroll = handleScroll
 
     return (
         <div className="AboutContainer">
@@ -211,21 +233,21 @@ export default function AboutPage() {
                     <p>Nos valeurs sont ancrées dans l'accomplissement de notre mission et nous guident dans l'exercice de nos fonctions aupres de nos differents clients:</p>
                 </div>
                 <div className="VContentText">
-                    <div className="VCPartOne">
-                        <OurValues Title="Expertise" Icon="/icons/valeur4.svg" Text="C'est ce qui définit même votre trajectoire professionnelle au sein de M212. L'expertise de nos équipes a été prouvée durant des décennies" color={"#71c8dc"} reversed={true}/>
-                        <OurValues Title="Engagement" Icon="/icons/valeur3.svg" Text="I'engagement envers nos clients est total et reléve d'une vraie quéte de sens car il représente pour l'ensemble des collaborateurs de M212 un véritable levier de performance. " color={"#000000"} reversed={true}/>    
+                    <div id="hidden" className="VCPartOne autoSlideL">
+                        <OurValues Title="Expertise" Icon="/icons/valeur1.svg" Text="C'est ce qui définit même votre trajectoire professionnelle au sein de M212. L'expertise de nos équipes a été prouvée durant des décennies" color={"#71c8dc"} reversed={true}/>
+                        <OurValues Title="Engagement" Icon="/icons/valeur2.svg" Text="I'engagement envers nos clients est total et reléve d'une vraie quéte de sens car il représente pour l'ensemble des collaborateurs de M212 un véritable levier de performance. " color={"#000000"} reversed={true}/>    
                     </div>
-                    <div className="VCPartTwo">
+                    <div id="hidden" className="VCPartTwo autoShow">
                         <img src="/images/nosvaleurs.jpg" alt="" />
                     </div>
-                    <div className="VCPartTree">
+                    <div id="hidden" className="VCPartTree autoSlideR">
                         <OurValues Title="Innovation" Icon="/icons/valeur3.svg" Text="la nécessité de rester créatif, de répondre aux exigences techniques & technologiques et & la pointe de procédés et de concepts événementiels, nous imposent d‘étre innovants. Nous sommes trés investis auprés de nos partenaires business pour pouvoir leur offrir des solutions novatrices et compétitives " color={"#000000"} reversed={false}/>
                         <OurValues Title="Excellence" Icon="/icons/valeur4.svg" Text="c'est tout simplement notre fagon de faire chaque prestation réalisée pour nos clients doit étre exécutée selon la méthode M212, une méthode qui vise excellence a toute épreuve et qui ne laisse aucune place a l4-peu-prés." color={"#71c8dc"} reversed={false}/>
                     </div>
                 </div>
             </div>
             <div className="MissionsSection">
-                <div className="Ourpictures">
+                <div id="hidden" className="Ourpictures autoShow">
                     <div className="couplePictures">
                         <img src="/images/nosmissions1.png" alt="" />
                         <img src="/images/nosmissions2.png" alt="" />
@@ -233,7 +255,7 @@ export default function AboutPage() {
                         <img src="/images/nosmissions4.png" alt="" />
                     </div>
                 </div>
-                <div className="OurMissions">
+                <div id="hidden" className="OurMissions autoSlideR">
                     <h2>Nos Missions</h2>
                     <span></span>
                     <p>L'agence M212 a pour mission de fournir a ses clients une offre globale de presentations techniques, sceniques et audiovisuelles de classe mondiale qu'ils soient des prefessionnels du secteur de l'evenementiel ou des particuliers du secteur public ou prive. M212 se positionne comme le partenaire de reference pour organiser ou coorganiser des evenements fascinants, aux standars internationaux laissant une forte empreinte emotionnelle aupres des differents publics cibles.</p>
@@ -241,9 +263,9 @@ export default function AboutPage() {
             </div>
             <div className="TalentsSection">
                 <OurTalentsDirection />
-                <OurTalentsWorkers fontSize="30%" pole={"Département Image"} images={["", "", "", ""]} names={["Filali", "El Bouri", "Ahmed", "Youssef"]} spans={["Ismail", "Soufiane", "Wahbi", "Sougrati"]} title={"Technicien Dep.Video"}/>
-                <OurTalentsWorkers fontSize="10%" pole={"Département Technique & Logistque"} images={["", "", "", ""]} names={["Mouzoune", "Ezwaouki", "Nour", "Ait Bouih"]} spans={["Said", "Soufiane", "Jamal", "Taoufik"]} title={"Responsable Stock"} />
-                <OurTalentsWorkersLast fontSize="10%" pole={"Département Son & Lumiére"} images={["", "", "", ""]} names={["Benelkahla", "Ezwaouki", "Krikch", "Elhafiane", "Amlal", "Ettalibi"]} spans={["Salah", "Tariq", "Rabii", "Ez-ddine", "Marssel", "Kamal"]} title="Technician Lumiére"/>
+                <OurTalentsWorkers fontSize="30%" pole={"Département Image"} images={["/images/worker1.jpg", "/images/worker1.jpg", "/images/worker1.jpg", "/images/worker1.jpg"]} names={["Filali", "El Bouri", "Ahmed", "Youssef"]} spans={["Ismail", "Soufiane", "Wahbi", "Sougrati"]} title={"Technicien Dep.Video"}/>
+                <OurTalentsWorkers fontSize="10%" pole={"Département Technique & Logistque"} images={["/images/worker1.jpg", "/images/worker1.jpg", "/images/worker1.jpg", "/images/worker1.jpg"]} names={["Mouzoune", "Ezwaouki", "Nour", "Ait Bouih"]} spans={["Said", "Soufiane", "Jamal", "Taoufik"]} title={"Responsable Stock"} />
+                <OurTalentsWorkersLast fontSize="10%" pole={"Département Son & Lumière"} images={["/images/worker1.jpg", "/images/worker1.jpg", "/images/worker1.jpg", "/images/worker1.jpg", "/images/worker1.jpg", "/images/worker1.jpg"]} names={["Benelkahla", "Ezwaouki", "Krikch", "Elhafiane", "Amlal", "Ettalibi"]} spans={["Salah", "Tariq", "Rabii", "Ez-ddine", "Marssel", "Kamal"]} title="Technician Lumière"/>
             </div>
             <Footer/>
         </div>

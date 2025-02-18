@@ -1,13 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="140" height="130" viewBox="0 0 28 26">
-  <defs>
-    <style>
-      .cls-1 {
-        font-size: 30px;
-        fill: #fff;
-        text-anchor: middle;
-        font-family: Material-Design-Iconic-Font, Material-Design-Iconic-Font;
-      }
-    </style>
-  </defs>
-  <text id="_" data-name="" class="cls-1" x="14.257" y="24.462"><tspan x="14.257"></tspan></text>
-</svg>
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 654.75 594.72"><defs><style>.cls-1{fill:#fff;}</style></defs><path class="cls-1" d="M600.85,228.11q23.71,0,41.18,17.45t17.45,41.19V644.14q0,25.13-17.45,42.58t-41.18,17.45H391.44l60,89.34v29.32H212.75V793.51l60-89.34h-208q-25.13,0-42.58-17.45T4.73,644.14V286.75q0-23.72,17.45-41.19t42.58-17.45Zm0,357.39V286.75H64.76V585.5Z" transform="translate(-4.73 -228.11)"/></svg>
