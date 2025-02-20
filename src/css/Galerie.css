@@ -1,0 +1,191 @@
+.RefContainer {
+    background-color: var(--CWhite);
+    position: relative;
+    height: auto;
+}
+.headRText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Font1;
+    font-size: 23px;
+    text-align: center;
+}
+.headRText > h1 {
+    color: black;
+}
+.headRText > h1 > span {
+    color: var(--Ccyan);
+}
+.headRText > p {
+    max-width: 70%;
+    font-family: Font3;
+    margin: 0;
+}
+.EventsContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    position: relative;
+}
+.EventContent {
+    display: grid;
+    grid-template-areas: "image" "infos";
+    grid-template-rows: 1fr 80px;
+    padding: 20px 20px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    width: 550px;
+    transition: .1s;
+}
+.EventContent:hover {
+    background-color: rgba(218, 218, 218, 0.637);
+}
+.EventContent > img {
+    grid-area: "image";
+    width: 550px;
+    height: 300px;
+}
+.EventContent > .infoText {
+    grid-area: "infos";
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 13px;
+    font-family: Font1;
+}
+.infoText > h3 {
+    font-family: Font3;
+}
+/*---------------------------PopUp-------------------------*/
+.BackPop {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.418);
+    transition: .2s;
+    display: flex;
+    overflow-y: scroll;
+}
+.PopUpContainer {
+    width: 75%;
+    height: 850px;
+    position: fixed;
+    z-index: 999;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.evenTImage {
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    user-select: none;
+    overflow-y: scroll;
+}
+.evenTImage > img {
+    width: 100%;
+    padding: 10px 0;
+}
+.eventPopInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+    justify-content: space-between;
+}
+.closeParent {
+    background-color: #71c8dce5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 15px;
+}
+.close-btnP {
+    background-color: #54b4ec;
+    padding: 5px 20px;
+    color: white;
+    font-family: Font1;
+    font-size: 25px;
+    cursor: pointer;
+    transition: .2s;
+}
+.close-btnP:hover {
+    background-color: black;
+}
+.infosPopE {
+    padding: 0 0 0 40px;
+    font-family: Font3;
+    background-color: white;
+    font-size: 17px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.duo > h3, .duo > p, .duo > h4 {
+    margin: 0;
+}
+.infosPopE > p {
+    margin: 0 0 10px 0;
+}
+.infosPopE > h1  {
+    font-family: Font1;
+    font-size: 40px;
+}
+.infosPopE > h2 {
+    font-family: Font2;
+    text-transform: capitalize;
+}
+#spaceIn {
+    font-size: 25px;
+}
+.NextPage {
+    background-color: #71c8dcc9;
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+.nextPParent {
+    display: flex;
+    font-family: Font1;
+    padding: 0 10px;
+    font-size: 20px;
+    width: 40%;
+    color: white;
+    gap: 15px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    user-select: none;
+}
+.nextPParent > p {
+    margin: 15px 0;
+}
+.nextPParent::before {
+    content: '';
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.144);
+    width: 0%;
+    height: 0%;
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    transition: .4s;
+}
+.nextPParent:hover::before {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+}

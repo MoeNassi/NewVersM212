@@ -5,6 +5,8 @@ import './css/footer.css'
 import './css/HomePage.css'
 import './css/AboutPage.css'
 import './css/DomainesPage.css'
+import './css/Contact.css'
+import './css/Galerie.css'
 import './css/responsive.css'
 
 import 'swiper/css';

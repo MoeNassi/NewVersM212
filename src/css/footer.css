@@ -5,12 +5,12 @@
     justify-content: center;
     align-items: center;
 }
-.firstPart, .secPart, .thirdPart {
-    width: 25.3%;
+.firstPart, .thirdPart {
+    width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
 }
 .firstPart {
@@ -46,7 +46,7 @@
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-.thirdPart, .secPart {
+.thirdPart {
     height: 75%;
     justify-content: flex-start;
     align-items: center;
@@ -57,6 +57,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 20%;
+    flex-wrap: wrap;
+    width: 100px;
     gap: 20px;
+}
+.socials > img {
+    cursor: pointer;
 }

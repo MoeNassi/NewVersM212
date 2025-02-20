@@ -165,8 +165,6 @@ body, #root {
 /*-----------------------------------------------*/
 .HomeContainer {
     height: auto;
-    border-bottom: 5px solid white;
-    box-shadow: 0 0 30px 5px white;
     background-color: var(--newBack);
 }
 .header {
@@ -183,14 +181,14 @@ body, #root {
     width: 200px;
 }
 .TopBar {
-    width: 35%;
+    width: 45%;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 40px;
 }
 .dropdown > p {
-    color: var(--white);
+    color: white;
     font-size: 17px;
     font-family: Font1;
     transition: .2s;
@@ -204,6 +202,9 @@ body, #root {
 .m212Video {
     height: 100%;
     width: 100%;
+}
+.force-style {
+    color: cyan !important;
 }
 .m212Video > video {
     position: absolute;
@@ -254,7 +255,7 @@ body, #root {
 .SecPart { /*remove m212*/
     width: 100%;
     left: 0;
-    background: url('/images/backe.png');
+    background: url('/M.jpeg');
     background-position: center;
     background-size: cover;
     position: relative;
@@ -270,7 +271,7 @@ body, #root {
 }
 .SecPart::before {
     content: '';
-    background-color: rgba(0, 0, 0, 0.644);
+    background: linear-gradient(0deg, rgba(0, 0, 0, .8), transparent);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -279,6 +280,7 @@ body, #root {
 }
 .container {
     height: auto;
+    background-color: var(--newBack);
     display: flex;
     flex-direction: column;
     gap: 100px;
@@ -407,3 +409,52 @@ body, #root {
     border-bottom-right-radius: 500px;
     border-bottom-left-radius: 500px;
 }
+.UpDown {
+    position: fixed;
+    width: 100%;
+    height: 100svh;
+    display: flex;
+    gap: 10px;
+    z-index: 0;
+    flex-direction: column;
+}
+#homePage {
+    width: 25px;
+    transition: .2s;
+    cursor: pointer;
+    color: white;
+}
+.customBar > #homePage {
+    color: rgb(0, 192, 192);
+}
+.customBar > #homePage:hover {
+    color: black;
+}
+#homePage:hover {
+    color: cyan;
+}
+.imageChanger {
+    color: cyan !important;
+}
+.up, .down {
+    background-color: var(--Ccyan);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Font1;
+    color: white;
+    position: relative;
+    z-index: 999;
+    top: 87%;
+    left: 95%;
+    cursor: pointer;
+    transition: .2s all;
+    box-shadow: -3px 3px 0px 0 rgba(0, 0, 0, 0.637);
+}
+.up:hover, .down:hover {
+    background-color: rgba(11, 153, 153, 0.651);
+}
+
+  

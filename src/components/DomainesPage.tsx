@@ -3,6 +3,7 @@ import Footer from "./footer";
 import { useEffect, useRef } from "react";
 import HeaderDrop from "./HeaderDrop";
 import gsap from "gsap";
+import UpAndDown from "./upNDown";
 
 interface DomainsProps {
     image:string
@@ -23,7 +24,7 @@ function OurDomainsA({image, title, span}:DomainsProps) {
                 </div>
                 <div style={{"alignItems": "flex-end", "textAlign": "right"}}  className="domaineText">
                     <p><span>Scéne et accroches</span> tel un écrin pour abriter votre événement en garantissant une parfaite maîtrise des installations techniques.</p>
-                    <p><span>Energie</span> pour une alimentation électrique fiable et sécurisée vitale à la réalisation du projet</p>
+                    <p><span>Energie</span> pour une alimentation électrique fiable et sécurisée vitale à la réalisation du projet.</p>
                 </div>
             </div>
         </div>
@@ -48,7 +49,7 @@ function OurDomainsI({image, title, span}:DomainsProps) {
                 </div>
                 <div style={{"alignItems": "flex-end", "textAlign": "right"}}  className="domaineText">
                     <h3>Streaming et Plateforme Zoom:</h3>
-                    <p>Retransmission en direct qui permet de connecter des publics du monde entier, ou selon le public cible afin de suivre votre événement distance et en live.</p>
+                    <p>Retransmission en direct qui permet de connecter des publics du monde entier, ou selon le public cible afin de suivre votre événement à distance et en live.</p>
                     <p><span>Vidéo</span> ou l'art de sublimer par l'image et enrichir l'expérience immersive visuelle de l'audiance.</p>
                 </div>
             </div>
@@ -73,10 +74,10 @@ function OurDomainsC({image, title, span}:DomainsProps) {
                     <div></div>
                 </div>
                 <div className="domaineText">
-                    <h3>Bureau d'etude:</h3>
-                    <p>Proposition de solutions techniques sur mesure pour transformer votre projet en un concept creatif memorable de la conception a la realisation de votre evenement.</p>
-                    <h3>Regie technique des lieux:</h3>
-                    <p>prise en charge de tous les aspects techniques des lieux repérage, maquette 3D, conseil en faisabité technique, en organisation, en valorisation at en agencement des lieus, etc. afin de sublimer votre événement.</p>
+                    <h3>Bureau d’étude :</h3>
+                    <p>Proposition de solutions techniques sur mesure pour transformer votre projet en un concept créatif mémorable de la conception à la réalisation de votre événement.</p>
+                    <h3>Régie technique des lieux :</h3>
+                    <p>prise en charge de tous les aspects techniques des lieux : repérage, maquette 3D, conseil en faisabilité technique, en organisation, en valorisation et en agencement des lieux, etc.<div>afin de sublimer votre événement.</div></p>
                 </div>
             </div>
         </div>
@@ -95,10 +96,10 @@ function OurDomainsS({image, title, span}:DomainsProps) {
                     <div></div>
                 </div>
                 <div className="domaineText">
-                    <p><span>Son</span> pour que l'expérience immersive de l‘audience soit totale portée par une qualité de son unique</p>
+                    <p><span>Son</span> pour que l'expérience immersive de l‘audience soit totale portée par une qualité de son unique.</p>
                     <h3>Traduction Simultanée</h3>
                     <p>Matériel de traduction simultanée de pointe garantissant une communication fluide et sans faille pour un impact maximal.</p>
-                    <p><span>Eclairage</span> pour des conceptions scéniques et donner au spectacle toute sa splendeur</p>
+                    <p><span>Eclairage</span> pour des conceptions scéniques et donner au spectacle toute sa splendeur.</p>
                 </div>
             </div>
         </div>
@@ -150,19 +151,20 @@ export default function DomainesPage() {
 
     return (
         <div className="DomaineContainer">
+            <UpAndDown />
             <div ref={dropRight} className="CustomAfter">
-                <HeaderDrop classname="customBar" DropClass="dropdownHidden" dropRight={dropRight}/>
+                <HeaderDrop classname="customBar" DropClass="dropdownHidden" dropRight={dropRight} actualBar=".secBar"/>
             </div>
             <div className="header">
                 <img onClick={()=> navigate('/')} id="m212logo" src="/logo.svg" alt="" />
-                <HeaderDrop classname="TopBar" DropClass="dropdown-content" dropRight={dropRight}/>
+                <HeaderDrop classname="TopBar" DropClass="dropdown-content" dropRight={dropRight} actualBar=".secBar"/>
                 <div id="list" onClick={BurgerMenu} className="menu">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
             </div>
-            <OurDomainsC image={"/images/backe.png"} title={"Consulting"} span=" : Etudes & Conseils"/>
+            <OurDomainsC image={"/images/consulting.jpg"} title={"Consulting"} span=" : Études & Conseils"/>
             <OurDomainsI image={"/images/image.jpeg"} title="Image" span=" & Ingenierie" />
             <OurDomainsS image={"/images/son.png"} title={"Son"} span=" & Eclairage" />
             <OurDomainsA image={"/images/structure.jpeg"} title={"Structure, Accastillage"} span=" & Plateau Scénique" />

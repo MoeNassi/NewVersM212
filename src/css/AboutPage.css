@@ -108,7 +108,7 @@
     justify-content: space-evenly;
 }
 .VHeadText {
-    height: 200px;
+    height: auto;
     text-align: center;
     font-family: Font1;
     color: black;
@@ -116,6 +116,7 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    padding: 40px 0 0;
 }
 .VHeadText > h1 {
     margin: 0;
@@ -126,8 +127,8 @@
 }
 .VHeadText > p {
     font-family: Font3;
-    max-width: 37%;
-    font-size: 18px;
+    max-width: 50%;
+    font-size: 15px;
 }
 .VContentText {
     height: 60%;
@@ -225,7 +226,7 @@
     height: 3px;
 }
 .OurMissions > p {
-    max-width: 61%;
+    max-width: 60%;
     font-size: 17px;
     margin: 40px 0;
 }
@@ -243,7 +244,7 @@
     height: auto;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-start;
     gap: 15px;
     padding: 40px 0;
     flex-wrap: wrap;
@@ -256,7 +257,7 @@
     grid-template-rows: 1fr 200px;
     grid-template-areas: "pic" "userInfos";
 }
-.slvsCard {
+.WorkerCard {
     background-color: var(--CWhite);
     width: 350px;
     height: 500px;
@@ -282,6 +283,7 @@
     font-family: Font3;
 }
 .userInfos > h1 > span {
+    text-transform: uppercase;
     font-family: Font1;
 }
 .userInfos > p {
@@ -301,7 +303,7 @@
 .employeePicSLV > img {
     width: 250px;
     height: 350px;
-    background-color: black;
+    background-color: rgb(216, 216, 216);
     object-fit: cover;
     background-position: top;
 }
@@ -320,6 +322,14 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
+}
+.directionTop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
 }
 .userInfosSLV> p, .userInfosSLV > h1 {
     margin: 0;
@@ -327,6 +337,7 @@
 }
 .userInfosSLV > h1 > span {
     font-family: Font1;
+    text-transform: uppercase;
 }
 .userInfosSLV > h1 {
     font-size: 25px;
@@ -358,7 +369,7 @@
 .TitleJob > h1 {
     font-family: font11;
     margin: 0;
-    font-size: 70px;
+    font-size: 40px;
 }
 .TitleJobDir > h1 {
     font-size: 40px;
