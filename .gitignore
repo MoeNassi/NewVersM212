@@ -7,7 +7,7 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-public/images/film.mp4
+public
 
 node_modules
 dist
