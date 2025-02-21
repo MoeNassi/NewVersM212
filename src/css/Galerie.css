@@ -71,9 +71,14 @@
     left: 0;
     top: 0;
     background-color: rgba(0, 0, 0, 0.418);
-    transition: .2s;
     display: flex;
     overflow-y: scroll;
+}
+.hideT {
+    transform: translateY(-100%);
+}
+.hideL {
+    transform: translateX(-100%);
 }
 .PopUpContainer {
     width: 75%;

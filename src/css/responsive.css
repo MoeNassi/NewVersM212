@@ -89,9 +89,6 @@
     }
 }
 @media screen and (max-width: 1350px) {
-    .bioInfo {
-        width: 25%;
-    }
     .bioInfo > p {
         font-size: 12px;
     }
@@ -112,6 +109,9 @@
     }
     .infosPopE > h1 {
         font-size: 30px;
+    }
+    .up, .down {
+        left: 90%;
     }
 }
 @media screen and (max-width: 1200px) {
@@ -316,6 +316,14 @@
     }
     .headDText {
         font-size: 10px;
+    }
+    .up, .down {
+        left: 86%;
+    }
+}
+@media screen and (max-height: 900px) {
+    .up, .down {
+        top: 80%;
     }
 }
 @media screen and (max-width: 677px) {

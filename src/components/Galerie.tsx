@@ -59,8 +59,8 @@ function PopUpGalerie({id, name, place, date, Prestation, realisation, images, s
     }
 
     useEffect(() => {
-        gsap.fromTo(".BackPop", {y: "-100%"}, {y: "0", duration: .5})
-        gsap.fromTo(".PopUpContainer", {x: "-150%"}, {x: "0", duration: .5, delay: .5})
+        gsap.fromTo(".BackPop", {y: "-100%"}, {y: "0%", duration: .5})
+        gsap.fromTo(".PopUpContainer", {x: "-200%"}, {x: "0%", duration: 1, delay: .5})
         setArray({
             id: id,
             name: name,
@@ -130,7 +130,7 @@ function EventsComp({id, setter, image, name, setId}:EventsProps) {
     }
 
     return (
-        <div id="hidden" onClick={handleClick} className="EventContent autoscrollI">
+        <div onClick={handleClick} className="EventContent">
             <img src={image} alt="" />
             <div className="infoText">
                 <h2>{name}</h2>
@@ -151,7 +151,7 @@ export default function RefContainer() {
         const elements = document.querySelectorAll('#hidden')
         elements.forEach(element => {
             const element_hei = element.getBoundingClientRect().top
-            if (element_hei < window.innerHeight - 100) {
+            if (element_hei < window.innerHeight) {
                 element.classList.remove('autoscroll')
                 element.classList.remove('changeRadius')
                 element.classList.remove('autoscrollI')

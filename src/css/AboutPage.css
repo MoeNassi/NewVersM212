@@ -34,14 +34,19 @@
     right: 0;
     z-index: 0;
 }
-.headText2 {
-    width: 100%;
+.headText2, .headText3 {
+    width: 80%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: 8%;
+    padding: 0 0 20px 0;
 }
-.headText2 > h3 {
+.headText3 {
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+.headText2 > h3, .headText3 > h3 {
     height: 100%;
     width: 60%;
     font-size: 35px;
@@ -50,7 +55,7 @@
     color: white;
     letter-spacing: 0;
 }
-.headText2 > h3::before {
+.headText2 > h3::before, .headText3 > h3::before {
     content: '';
     background-color: cyan;
     position: absolute;
@@ -62,7 +67,7 @@
 }
 .bioInfo {
     height: 100%;
-    width: 20%;
+    width: fit-content;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -77,7 +82,7 @@
     font-family: Font4;
 }
 .ContentText {
-    height: 76.8%;
+    height: 70.8%;
     width: 90%;
     display: flex;
     flex-wrap: wrap;
@@ -96,7 +101,7 @@
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    height: 800px;
+    height: auto;
 }
 /*----------------------------------------------------------*/
 .ValuesSection {
@@ -129,6 +134,10 @@
     font-family: Font3;
     max-width: 50%;
     font-size: 15px;
+    margin: 0;
+}
+.VHeadText > p:nth-child(2) {
+    margin: 20px 0 0;
 }
 .VContentText {
     height: 60%;
@@ -335,7 +344,8 @@
     margin: 0;
     font-family: Font3;
 }
-.userInfosSLV > h1 > span {
+.userInfosSLV > h1 > span, .userInfos > h1 > span {
+    color: var(--Ccyan);
     font-family: Font1;
     text-transform: uppercase;
 }
@@ -359,6 +369,7 @@
 }
 .TitleJob, .TitleJobDir {
     display: flex;
+    justify-content: center;
     align-items: flex-end;
     gap: 15px;
     width: 85%;

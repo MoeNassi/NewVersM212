@@ -77,7 +77,8 @@ function OurDomainsC({image, title, span}:DomainsProps) {
                     <h3>Bureau d’étude :</h3>
                     <p>Proposition de solutions techniques sur mesure pour transformer votre projet en un concept créatif mémorable de la conception à la réalisation de votre événement.</p>
                     <h3>Régie technique des lieux :</h3>
-                    <p>prise en charge de tous les aspects techniques des lieux : repérage, maquette 3D, conseil en faisabilité technique, en organisation, en valorisation et en agencement des lieux, etc.<div>afin de sublimer votre événement.</div></p>
+                    <p>prise en charge de tous les aspects techniques des lieux : repérage, maquette 3D, conseil en faisabilité technique, en organisation, en valorisation et en agencement des lieux, etc.</p>
+                    <p>afin de sublimer votre événement.</p>
                 </div>
             </div>
         </div>
@@ -165,7 +166,7 @@ export default function DomainesPage() {
                 </div>
             </div>
             <OurDomainsC image={"/images/consulting.jpg"} title={"Consulting"} span=" : Études & Conseils"/>
-            <OurDomainsI image={"/images/image.jpeg"} title="Image" span=" & Ingenierie" />
+            <OurDomainsI image={"/images/image.jpeg"} title="Image" span=" & Ingénierie" />
             <OurDomainsS image={"/images/son.png"} title={"Son"} span=" & Eclairage" />
             <OurDomainsA image={"/images/structure.jpeg"} title={"Structure, Accastillage"} span=" & Plateau Scénique" />
             <Footer/>

@@ -7,7 +7,6 @@ import UpAndDown from "./upNDown"
 
 interface PropsValues {
     Title:string
-    Icon:string
     Text:string
     reversed:boolean
     color:string
@@ -41,19 +40,15 @@ function SlaveCard({image, name, span, color, title}:CardProps) {
 function OutTalentsDir() {
     return (
         <div className="Workers">
-            <div id="hidden" className="TitleJob autoSlideL">
-                <h1>Pôle de Direction</h1>
-                <span></span>
-            </div>
             <div className="CardsS">
                 <SlaveCard name="Souad" span="Achouay" color="#71c8dc" title="Chargée de Mission" image="/pictures/SOUAD ACHOUAY.jpg"/>
-                <SlaveCard name="Lamiaa" span="Mouhssine" color="#71c8dc" title="Directrice du developpement" image="/images/worker1.jpg"/>
+                <SlaveCard name="Lamiaa" span="Mouhssine" color="#71c8dc" title="Directrice du Développement" image="/images/worker1.jpg"/>
                 <div id="hidden" className="WorkerCard autoSlideR">
                     <div className="employeePicSLV">
                         <img src={"/pictures/SOUFIANE EZWAOUKI.jpg"} alt="" />
                     </div>
                     <div className="userInfosSLV">
-                        <h1>Soufiane <span style={{"color": "black"}}>Ezwaouki</span></h1>
+                        <h1>Soufiane <span>Ezwaouki</span></h1>
                         <p>Directeur Technique</p>
                         <i id="italic">Bureau d'étude et Régie technique des lieux</i>
                     </div>
@@ -66,14 +61,17 @@ function OutTalentsDir() {
 function OurTalentsDirection() {
     return (
         <div className="ourTalents">
-            <div className="directionTop">
-                <div className="founderCard">
-                    <div className="employeePic">
+            <div id="hidden" className="TitleJob autoSlideL">
+                <h1>Pôle de Direction</h1>
+            </div>
+            <div className="CardsS">
+                <div className="WorkerCard">
+                    <div className="employeePicSLV">
                         <img src="/pictures/ABDESSAMAD JAMAL WAFI.jpg" alt="" />
                     </div>
-                    <div className="userInfos">
+                    <div className="userInfosSLV">
                         <h1>Abdessamad <span>Jamal Wafi</span></h1>
-                        <p>fondateur Directeur Général</p>
+                        <p>Fondateur Directeur Général</p>
                     </div>
                 </div>
             </div>
@@ -93,6 +91,7 @@ function OurTalentsWorkers({pole, names, spans, images, fontSize}: TalentsWorkPr
     return (
         <div className="Workers">
             <div id="hidden" className="TitleJob autoSlideL">
+                <span style={{"width": fontSize}}></span>
                 <h1>{pole}</h1>
                 <span style={{"width": fontSize}}></span>
             </div>
@@ -108,25 +107,21 @@ function OurTalentsWorkers({pole, names, spans, images, fontSize}: TalentsWorkPr
     )
 }
 
-function OurValues({Title, Icon, Text, color, reversed}: PropsValues) {
+function OurValues({Title, Text, color, reversed}: PropsValues) {
     return (
         <>
         {
             !reversed ?
                 <div className="ourValues">
                     <div className="HeadVPart">
-                        <div style={{"background": color}} className="logoValue">
-                            <img src={Icon} alt="" />
-                        </div>
+                        <div style={{"background": color}} className="logoValue"></div>
                         <h2>{Title}</h2>
                     </div>
                     <p>{Text}</p>
                 </div>:
                 <div className="ourValues">
                     <div style={{"flexDirection": "row-reverse"}} className="HeadVPart">
-                        <div style={{"background": color}} className="logoValue">
-                            <img src={Icon} alt="" />
-                        </div>
+                        <div style={{"background": color}} className="logoValue"></div>
                         <h2>{Title}</h2>
                     </div>
                     <p style={{"textAlign": "right"}}>{Text}</p>
@@ -212,20 +207,22 @@ export default function AboutPage() {
                 <div className="RFounderS">
                     <div className="headText2">
                         <h3>Mot du fondateur</h3>
-                        <div className="bioInfo">
-                            <p>Abdessamad Jamal Wafi</p>
-                            <p>Fondateur Directeur Général</p>
-                        </div>
                     </div>
                     <div className="ContentText">
                         <div className="WordFirstP">
                             <p>Depuis sa création, l’agence M212 s’est imposée comme un acteur de référence en apportant une expertise technique et organisationnelle de classe mondiale. M212 se positionne désormais comme une agence qui regroupe des experts aux compétences techniques pluridisciplinaires et qui comptent à leur actif plus d’une vingtaine d’années d’expérience.</p>
                             <p>Les grands événements institutionnels à la fois nationaux comme internationaux portent la signature de l’équipe d’experts de M212. En effet, cette équipe a accompagné avec succès la majorité des événements d’envergure organisés au Maroc comme à l’international grâce à un haut niveau de qualité et d’exigences aux standards internationaux.</p>
+                            <p>La création de M212 incarne l’aboutissement collectif de notre histoire professionnelle qui se distingue par un haut niveau d’expertise et de maitrise des métiers de l’événementiel :</p>
                         </div>
                         <div className="WordSecondP">
-                            <p>La création de M212 incarne l’aboutissement collectif de notre histoire professionnelle qui se distingue par un haut niveau d’expertise et de maitrise des métiers de l’événementiel :</p>
                             <p>M212 est une agence globale de prestations techniques, scéniques et audiovisuelles disposant d’un savoir-faire de haut niveau et des ressources humaines qualifiées, des moyens technologiques de pointe et du matériel de dernière génération permettant d’offrir à nos clients des solutions techniques innovantes pluridisciplinaires clé-en-main.</p>
                             <p>Notre objectif ultime est de permettre à nos audiences de vivre une expérience inédite. Au sein de M212, nous sommes convaincus que les clients n'oublieront jamais ce qu’on leur a fait ressentir… créer un lien émotionnel mémorable, telle est notre ambition qui nous anime à la naissance de chaque nouveau projet !</p>
+                            <div className="headText3">
+                                <div className="bioInfo">
+                                    <p>Abdessamad Jamal Wafi</p>
+                                    <p>Fondateur Directeur Général</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -237,15 +234,15 @@ export default function AboutPage() {
                 </div>
                 <div className="VContentText">
                     <div id="hidden" className="VCPartOne autoSlideL">
-                        <OurValues Title="Expertise" Icon="/icons/valeur1.svg" Text="C'est ce qui définit même votre trajectoire professionnelle au sein de M212. L'expertise de nos équipes a été prouvée durant des décennies" color={"#71c8dc"} reversed={true}/>
-                        <OurValues Title="Engagement" Icon="/icons/valeur3.svg" Text="L'engagement envers nos clients est total et relève d'une vraie quête de sens, car il représente pour l'ensemble des collaborateurs de M212 un véritable levier de performance." color={"#000000"} reversed={true}/>    
+                        <OurValues Title="Expertise" Text="C'est ce qui définit même votre trajectoire professionnelle au sein de M212. L'expertise de nos équipes a été prouvée durant des décennies." color={"#71c8dc"} reversed={true}/>
+                        <OurValues Title="Engagement" Text="L'engagement envers nos clients est total et relève d'une vraie quête de sens, car il représente pour l'ensemble des collaborateurs de M212 un véritable levier de performance." color={"#000000"} reversed={true}/>    
                     </div>
                     <div id="hidden" className="VCPartTwo autoShow">
                         <img src="/images/nosvaleurs.jpg" alt="" />
                     </div>
                     <div id="hidden" className="VCPartTree autoSlideR">
-                        <OurValues Title="Innovation" Icon="/icons/valeur2.svg" Text="La nécessité de rester créatif, de répondre aux exigences techniques & technologiques et à la pointe de procédés et de concepts événementiels, nous impose d’être innovants. Nous sommes très investis auprès de nos partenaires business pour pouvoir leur offrir des solutions novatrices et compétitives" color={"#000000"} reversed={false}/>
-                        <OurValues Title="Excellence" Icon="/icons/valeur4.svg" Text="C'est tout simplement notre façon de faire. Chaque prestation réalisée pour nos clients doit être exécutée selon la méthode M212, une méthode qui vise l'excellence à toute épreuve et qui ne laisse aucune place à l'à-peu-près." color={"#71c8dc"} reversed={false}/>
+                        <OurValues Title="Innovation" Text="La nécessité de rester créatif, de répondre aux exigences techniques & technologiques et à la pointe de procédés et de concepts événementiels, nous impose d’être innovants. Nous sommes très investis auprès de nos partenaires business pour pouvoir leur offrir des solutions novatrices et compétitives." color={"#000000"} reversed={false}/>
+                        <OurValues Title="Excellence" Text="C'est tout simplement notre façon de faire. Chaque prestation réalisée pour nos clients doit être exécutée selon la méthode M212, une méthode qui vise l'excellence à toute épreuve et qui ne laisse aucune place à l'à-peu-près." color={"#71c8dc"} reversed={false}/>
                     </div>
                 </div>
             </div>
@@ -265,9 +262,14 @@ export default function AboutPage() {
                 </div>
             </div>
             <div className="TalentsSection">
+                <div className="VHeadText">
+                    <h1>Nos <span>Talents</span></h1>
+                    <p>Le développement humain est au cœur de notre stratégie de développement. En effet, si M212 dispose de RH qualifiées et expertes c’est grâce à l’investissement dans le savoir-faire, à la connaissance du marché local, régional et international, à la compréhension des enjeux et des défis de nos clients qu’ils soient nationaux ou internationaux.</p>
+                    <p>Nous sommes conscients que notre capital humain est notre réel avantage compétitif au-delà de l’acquisition de tout matériel ou de technologie, la différence réside dans la qualité des Femmes et des Hommes qui pilotent ces moyens.</p>
+                </div>
                 <OurTalentsDirection />
                 <OutTalentsDir/>
-                <OurTalentsWorkers fontSize="10%" pole={"Département Image et Ingénieurie"} images={["/pictures/ISMAIL EL FILALI.jpg", "/pictures/SOUFIANE EL BOURI.jpg", "/pictures/AHMEDWAHBI.jpg", "/pictures/YOUSSEF SOUGRATI.jpg"]} names={["Ismail", "Soufiane", "Ahmed", "Youssef"]} spans={["El Filali", "El Bouri", "Wahbi", "Sougrati"]} />
+                <OurTalentsWorkers fontSize="10%" pole={"Département Image et Ingénierie"} images={["/pictures/ISMAIL EL FILALI.jpg", "/pictures/SOUFIANE EL BOURI.jpg", "/pictures/AHMEDWAHBI.jpg", "/pictures/YOUSSEF SOUGRATI.jpg"]} names={["Ismail", "Soufiane", "Ahmed", "Youssef"]} spans={["El Filali", "El Bouri", "Wahbi", "Sougrati"]} />
                 <OurTalentsWorkers fontSize="10%" pole={"Département Son et Eclairage"} images={["/pictures/RACHID BOULLOUZE.jpg", "/pictures/KAMAL ETTALIBI.jpg", "/pictures/AMLAL SALAH.jpg", "/pictures/ADIL TIZLA.jpg", "/pictures/EZ-DDINE ELHAFIANE.jpg", "/pictures/RABII KRIKCH.jpg", "/pictures/SALAH BENKAHLA.jpg", "/pictures/RACHID ESSEBTI.jpg"]} names={["Rachid", "Kamal", "Salah", "Adil", "Ez-ddine", "Rabii", "Salah", "Rachid"]} spans={["Boullouze", "Ettalibi", "Amlal", "Tizla", "Elhafiane", "Krikch", "Benkahla", "Essbti"]} />
                 <OurTalentsWorkers fontSize="10%" pole={"Département Structure, Accastillage et Plateau scènique"} images={["/pictures/RACHID JANANE.jpg", "/pictures/SAID MOZONE.jpg"]} names={["Rachid", "Said"]} spans={["Janane", "Mozone"]} />
                 <OurTalentsWorkers fontSize="10%" pole={"Département Support & Logistque"} images={["/pictures/MOHAMED ABOULAZIZ.jpg", "/pictures/TARIK EZWAOUKI.jpg", "/pictures/ABDELLAH EL MOURABITE.jpg", "/pictures/OMAR EZRIOULI.jpg", "/pictures/JAMAL NOUR.jpg", "/pictures/LOUBNA AIT BOUIH.jpg", "/pictures/ABDELJALIL AMAL.jpg", "/pictures/MOHAMED MARDAK.jpg"]} names={["Mohamed", "Tarik", "Abdellah", "Omar", "Jamal", "Loubna", "Abdeljalil", "Mohamed"]} spans={["Aboulaziz", "Ezwaouki", "El Mourabite", "Ezriouli", "Nour", "Ait Bouih", "Amal", "Mardak"]}/>
