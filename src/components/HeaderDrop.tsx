@@ -88,6 +88,10 @@ export default function HeaderDrop({classname, DropClass, dropRight, actualBar}:
             </div>
             <div className="dropdown">
                 <p onClick={(e)=> handleBars(e, 'RefContainer', '/realisations')} className="thirdBar">Nos références</p>
+                <div className={DropClass}>
+                    <p onClick={(e)=> handleBars(e, 'EventsContainer', '/realisations')}>Nos réalisations</p>
+                    <p onClick={(e)=> handleBars(e, 'container', '/realisations')}>Pourquoi choisir M212</p>
+                </div>
             </div>
             <div className="dropdown">
                 <p onClick={(e)=> handleBars(e, 'ContactContainer', '/contact')} className="fourthBar">Contact</p>

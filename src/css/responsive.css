@@ -237,8 +237,20 @@
         height: 0%;
     }
     .LFounderS {
+        display: none;
         width: 70%;
         height: 50svh;
+    }
+    #secondPic {
+        display: inline;
+        width: 44%;
+    }
+    #secondPic > .FImage {
+        background-position: top;
+        left: 50%;
+        height: 95%;
+        transform: translateX(-50%);
+        top: 0;
     }
     .FImage {
         height: 80%;
@@ -262,7 +274,7 @@
     .PopUpContainer {
         flex-direction: column;
     }
-    .eventPopInfo, .evenTImage {
+    .evenTImage {
         width: 100%;
     }
 }
@@ -275,10 +287,6 @@
     }
     .rightPartH > p {
         font-size: 13px !important;
-    }
-    .HomeOptions:nth-child(2) > .rightPartH {
-        width: 65% !important;
-        height: 15svh;
     }
     .HomeOptions:nth-child(4) > .rightPartH {
         width: 65% !important;
@@ -319,6 +327,12 @@
     }
     .up, .down {
         left: 86%;
+    }
+    .eventPopInfo {
+        display: none;
+    }
+    #PopInfoHidden {
+        display: block !important;
     }
 }
 @media screen and (max-height: 900px) {
@@ -373,6 +387,27 @@
     }
     .headRText {
         font-size: 19px;
+    }
+    .ContactHeadP > h1 {
+        font-size: 35px;
+    }
+    .addressContact {
+        flex-direction: column;
+    }
+    .addressContact > h3 {
+        margin: 0;
+        max-width: 90%;
+        text-align: center;
+    }
+    .picContactI > img {
+        width: 50px;
+        height: 50px;
+    }
+    .infoContactP > a, .infoContactP > h3, .infoContactP > h3 > span {
+        font-size: 13px;
+    }
+    #PopInfoHidden > p {
+        font-size: 13px !important;
     }
 }
 @media screen and (max-width: 615px) {
@@ -433,6 +468,9 @@
     }
     .ContactHeadP > h1 {
         font-size: 30px;
+    }
+    #secondPic {
+        width: 64% !important;
     }
 }
 @media screen and (max-width: 450px) {

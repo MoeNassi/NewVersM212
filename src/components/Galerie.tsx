@@ -40,27 +40,14 @@ interface PopUpProps {
 }
 
 function PopUpGalerie({id, name, place, date, Prestation, realisation, images, setPop, format}:PopUpProps) {
+    const [Index, setIndex] = useState<any>(0)
     const [array, setArray] = useState<any>([
         {"id": "", "name": "", "place": "", "date": "", "Prestation": "", "realisation": "", "images": []}
     ])
 
-    const handleClick = () => {
-        var index = array.id + 1
-        if (index == 15) //change it to 15
-            index = 0
-        setArray({id: EventsData[index].id,
-            name: EventsData[index].name,
-            place: EventsData[index].Place,
-            date: EventsData[index].date,
-            Prestation: EventsData[index].Prestations,
-            realisation: EventsData[index].Realisation,
-            format: EventsData[index].format,
-            images: EventsData[index].images})
-    }
-
     useEffect(() => {
         gsap.fromTo(".BackPop", {y: "-100%"}, {y: "0%", duration: .5})
-        gsap.fromTo(".PopUpContainer", {x: "-200%"}, {x: "0%", duration: 1, delay: .5})
+        gsap.fromTo(".PopUpContainer", {y: "-100%"}, {y: "0%", duration: 1, delay: .5})
         setArray({
             id: id,
             name: name,
@@ -73,42 +60,40 @@ function PopUpGalerie({id, name, place, date, Prestation, realisation, images, s
         });
     }, []);
 
+    const handleKey = (arrow: string) => {
+        if (arrow == '-1')
+            setIndex(Index - 1)
+        else if (arrow == '1')
+            setIndex(Index + 1)
+        if (Index + 1 > array?.images.length - 1 && arrow == '1')
+            setIndex(0)
+        if (Index - 1 < 0 && arrow == '-1') {
+            setIndex(array?.images.length - 1)
+            console.log('dkhelt')
+        }
+    }
+
     return (
         <div className="PopUpContainer">
-            <div className="evenTImage">
-                {        
-                    array.images?.map((image: any, index: any) => (
-                        <img key={index} src={image} alt="" />
-                    ))
-                }
+            <div className="closeParent">
+                <div onClick={()=> setPop(false)} className="close-btnP">X</div>
             </div>
-            <div className="eventPopInfo">
-                <div className="closeParent">
-                    <div onClick={()=> setPop(false)} className="close-btnP">x</div>
-                </div>
-                <div className="infosPopE">
+            <div className="evenTImage">
+                <div onClick={()=> handleKey('-1')} className="leftArrowS"></div>
+                <div onClick={()=> handleKey('1')} className="rightArrowS"></div>
+                <div className="eventPopInfo">
                     <h1>{array.name}</h1>
-                    <div className="duo">
-                        <h3>Lieu de l'événement:</h3>
-                        <p>{array.place}</p>
-                    </div>
-                    <div className="duo">
-                        <h3>Format:</h3>
-                        <p>{array.format}</p>
-                    </div>
-                    <div className="duo">
-                        <h3>Prestations fournies</h3>
-                        <h4>Toutes techniques</h4>
-                        <p>{array.Prestation}</p>
-                    </div>
-                    <h2 id="spaceIn">{array.realisation}</h2>
+                    <p>{array.place} - {array.date}</p>
+                    <p id="">Prestations fournies: {array.Prestation}</p>
+                    <p>Format: {array.format}/<i>{array.realisation}</i></p>
                 </div>
-                <div className="NextPage">
-                    <div onClick={handleClick} className="nextPParent">
-                        <p>évènement suivant</p>
-                        <img src="/right.svg" alt="" />
-                    </div>
-                </div>
+                <img src={array?.images?.[Index]} alt="" />
+            </div>
+            <div id="PopInfoHidden" className="eventPopInfo">
+                    <h1>{array.name}</h1>
+                    <p>{array.place} - {array.date}</p>
+                    <p id="">Prestations fournies: {array.Prestation}</p>
+                    <p>Format: {array.format}/<i>{array.realisation}</i></p>
             </div>
         </div>
     )
@@ -125,7 +110,6 @@ interface EventsProps {
 function EventsComp({id, setter, image, name, setId}:EventsProps) {
     const handleClick = () => {
         setId(id)
-        console.log(id)
         setter(true)
     }
 
@@ -225,12 +209,12 @@ export default function RefContainer() {
                     <h3 id="hidden" className="autoShow">Pourquoi choisir M212 ?</h3>
                     <div className="whyChoosing">
                         <div className="indexOne">
-                            <Options fontSize="16px" maxWidth="93%" width="70%" logo="/firstLogo.svg" number="/numbers/iconNumber1.svg" description="Une offre globale de prestations techniques, scéniques et audiovisiuelles et au besoin, M212 a la capacité de prendre en charge toutes les prestations évènementielles tout en mettant à votre disposition un interlocuteur unique qui vous est dédié le long du projet."/>
+                            <Options fontSize="16px" maxWidth="93%" width="70%" logo="/FourthLogo.svg" number="/numbers/iconNumber1.svg" description="Une equipe d'experts qui partagent des valeurs d'Expertise, d'Innovation, d'Engagement et d'Excellence pour la réussite des grands projets qui leur sont confiés."/>
                             <Options fontSize="22px" maxWidth="93%" width="65%" logo="/SecLogo.svg" number="/numbers/iconNumber2.svg" description="Une approche projet qui allie art et rigueur: l'esprit creatif et innovant qui s'allie aux indicateurs de performance pour mesurer l'atteinte des objectifs."/>
                         </div>
                         <div className="indexTwo">
                             <Options fontSize="22px" maxWidth="93%" width="60%" logo="/f.svg" number="/numbers/iconNumber3.svg" description="Réactivité, reporting et respect des délais, un engagement sans faille."/>
-                            <Options fontSize="22px" maxWidth="95%" width="60%" logo="/FourthLogo.svg" number="/numbers/iconNumber4.svg" description="Une equipe d'experts qui partagent des valeurs d'Expertise, d'Innovation, d'Engagement et d'Excellence pour la réussite des grands projets qui leur sont confiés."/>
+                            <Options fontSize="16px" maxWidth="95%" width="60%" logo="/firstLogo.svg" number="/numbers/iconNumber4.svg" description="Une offre globale de prestations techniques, scéniques et audiovisiuelles et au besoin, M212 a la capacité de prendre en charge toutes les prestations évènementielles tout en mettant à votre disposition un interlocuteur unique qui vous est dédié le long du projet."/>
                         </div>
                     </div>
                 </div>

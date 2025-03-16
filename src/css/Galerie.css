@@ -74,39 +74,53 @@
     display: flex;
     overflow-y: scroll;
 }
-.hideT {
-    transform: translateY(-100%);
-}
-.hideL {
-    transform: translateX(-100%);
-}
 .PopUpContainer {
     width: 75%;
     height: 850px;
-    position: fixed;
+    position: absolute;
     z-index: 999;
     left: 50%;
+    top: 0;
     transform: translateX(-50%);
     display: flex;
+    flex-direction: column;
 }
 .evenTImage {
-    width: 50%;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     display: flex;
     user-select: none;
-    overflow-y: scroll;
+    overflow-y: hidden;
+    position: relative;
 }
 .evenTImage > img {
     width: 100%;
-    padding: 10px 0;
 }
-.eventPopInfo {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    user-select: none;
-    justify-content: space-between;
+.leftArrowS, .rightArrowS {
+    content: '';
+    width: 50px;
+    height: 50px;
+    background-color: var(--Ccyan);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: .2s all;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.leftArrowS {
+    left: 20px;
+    background-image: url('/left.svg');
+}
+.rightArrowS {
+    right: 20px;
+    background-image: url('/right.svg');
+}
+.rightArrowS:hover, .leftArrowS:hover {
+    opacity: .8;
 }
 .closeParent {
     background-color: #71c8dce5;
@@ -127,70 +141,27 @@
 .close-btnP:hover {
     background-color: black;
 }
-.infosPopE {
-    padding: 0 0 0 40px;
-    font-family: Font3;
-    background-color: white;
-    font-size: 17px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-.duo > h3, .duo > p, .duo > h4 {
-    margin: 0;
-}
-.infosPopE > p {
-    margin: 0 0 10px 0;
-}
-.infosPopE > h1  {
-    font-family: Font1;
-    font-size: 40px;
-}
-.infosPopE > h2 {
-    font-family: Font2;
-    text-transform: capitalize;
-}
-#spaceIn {
-    font-size: 25px;
-}
-.NextPage {
-    background-color: #71c8dcc9;
-    padding: 15px;
-    display: flex;
-    justify-content: flex-end;
-}
-.nextPParent {
-    display: flex;
-    font-family: Font1;
-    padding: 0 10px;
-    font-size: 20px;
-    width: 40%;
-    color: white;
-    gap: 15px;
-    cursor: pointer;
-    position: relative;
-    z-index: 1;
-    user-select: none;
-}
-.nextPParent > p {
-    margin: 15px 0;
-}
-.nextPParent::before {
-    content: '';
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.144);
-    width: 0%;
-    height: 0%;
+.eventPopInfo {
+    background-color: rgba(0, 70, 128, 0.61);
     position: absolute;
-    z-index: -1;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    transition: .4s;
+    bottom: 20px;
+    right: 20px;
+    width: 600px;
+    height: auto;
+    padding: 0 20px;
 }
-.nextPParent:hover::before {
-    width: 100%;
-    height: 100%;
-    border-radius: 0;
+.eventPopInfo > h1 {
+    font-family: Font1;
+    font-size: 20px;
+    color: white;
+}
+.eventPopInfo > p {
+    color: white;
+    font-family: Font3;
+    font-size: 15px;
+}
+#PopInfoHidden {
+    display: none;
+    width: auto;
+    position: static !important;
 }

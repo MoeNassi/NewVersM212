@@ -5,6 +5,27 @@ import Footer from "./footer";
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
 
+interface ContactProps {
+    url:string
+    name:string
+    span:string
+    mail:string
+}
+
+function ContactInfo({url, name, span, mail}:ContactProps) {
+    return (
+        <div className="personContact">
+            <div className="picContactI">
+                <img src={url} alt="" />
+            </div>
+            <div className="infoContactP">
+                <h3>{name} <span>{span}</span></h3>
+                <a target="_blank" href={`https://mail.google.com/mail/u/0/?fs=1&to=${mail}&su=&body=&tf=cm`}>{mail}</a>
+            </div>
+        </div>
+    )
+}
+
 export default function ContactPage() {
     const dropRight = useRef<HTMLDivElement>(null)
     const emailRef = useRef<HTMLInputElement>(null)
@@ -114,6 +135,19 @@ export default function ContactPage() {
             <div className="contactContent">
                 <div className="ContactHeadP">
                     <h1>Contactez-nous</h1>
+                    <div className="addressContact">
+                        <img src="/addressN.svg" alt="" />
+                        <h3>Lot no137 quartier industriel Sidi Ghanem, 40110 Marrakech</h3>
+                    </div>
+                    <div className="addressContact">
+                        <img src="/phoneN.svg" alt="" />
+                        <h3>+212 5 24 35 89 12</h3>
+                    </div>
+                </div>
+                <div className="peopleToContact">
+                    <ContactInfo url="/pictures/ABDESSAMAD JAMAL WAFI.jpg" name="Abdessamad" span="Jamal Wafi" mail="samad.wafi@m212av.com"/>
+                    <ContactInfo url="/images/worker1.jpg" name="Lamiaa" span="Mouhssine" mail="lamia.mouhssine@m212av.com"/>
+                    <ContactInfo url="/pictures/SOUAD ACHOUAY.jpg" name="Souad" span="Achouay" mail="souad.achouay@m212av.com"/>
                 </div>
                 <div className="TwoNPT">
                     <input ref={nameRef} type="text" placeholder="Name"/>
@@ -122,7 +156,7 @@ export default function ContactPage() {
                 <div className="messageA">
                     <textarea ref={messageRef} name="" id="" placeholder="Message"></textarea>
                 </div>
-                <button onClick={SendMail}>submit</button>
+                <button onClick={SendMail}>ENVOYER</button>
             </div>
             <Footer />
         </div>

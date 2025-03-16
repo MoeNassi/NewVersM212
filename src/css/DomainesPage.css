@@ -24,7 +24,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 35px;
-    align-items: center;
+    /* align-items: center; */
     position: relative;
     z-index: 0;
 }

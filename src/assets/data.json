@@ -7,7 +7,7 @@
         "date": "Novembre 2024",
         "Prestations": "Vidéo, Sonorisation, Écran LED, Matériel de traduction, Lumière, Régie caméras",
         "format": "Conférence",
-        "Realisation": "Event by Capital Events"
+        "Realisation": "Capital Events"
     },
     {
         "id": 1,
@@ -17,7 +17,7 @@
         "date": "Novembre 2024",
         "Prestations": "Vidéo, Sonorisation, Écran LED, Lumière, Régie caméras, Décoration",
         "format": "Fashion Show",
-        "Realisation": "Event by Casa Moda Academy"
+        "Realisation": "Casa Moda Academy"
     },
     {
         "id": 2,
@@ -27,7 +27,7 @@
         "date": "Octobre 2024",
         "Prestations": "Vidéo, Sonorisation, Écran LED, Matériel de traduction, Lumière, Régie caméras",
         "format": "Conférence",
-        "Realisation": "Event by CGEM"
+        "Realisation": "CGEM"
     },
     {
         "id": 3,
@@ -37,7 +37,7 @@
         "date": "Octobre 2024",
         "Prestations": "Vidéo, Sonorisation, Écran LED, Lumière, Régie caméras",
         "format": "Conférence",
-        "Realisation": "Event by CGEM"
+        "Realisation": "CGEM"
     },
     {
         "id": 4,
@@ -47,7 +47,7 @@
         "date": "Décembre 2024",
         "Prestations": "Écran LED, Vidéo, Sonorisation, Décoration, Lumière, Régie caméras",
         "format": "Congrès (Plénière, Salles de Sous commissions, Espaces B2B, Stands)",
-        "Realisation": "Event by Jeune Afrique"
+        "Realisation": "Jeune Afrique"
     },
     {
         "id": 5,
@@ -57,7 +57,7 @@
         "date": "Octobre 2024",
         "Prestations": "Écran LED, Vidéo, Sonorisation, Lumière, Régie caméras",
         "format": "Salon de l'Aviation (Plénière, Espaces d'exposition)",
-        "Realisation": "Event by Capital Events"
+        "Realisation": "Capital Events"
     },
     {
         "id": 6,
@@ -67,7 +67,7 @@
         "date": "Septembre 2024",
         "Prestations": "Écran LED, Vidéo, Sonorisation, Lumière",
         "format": "Conférence",
-        "Realisation": "Event by Stours"
+        "Realisation": "Stours"
     },
     {
         "id": 7,
@@ -77,7 +77,7 @@
         "date": "Septembre 2024",
         "Prestations": "Vidéo, Sonorisation, Écran LED, Matériel de traduction, Lumière, Décoration, Régie caméras",
         "format": "Conférence",
-        "Realisation": "Event by M212"
+        "Realisation": "M212"
     },
     {
         "id": 8,
@@ -87,7 +87,7 @@
         "date": "Novembre 2024",
         "Prestations": "Sonorisation, Lumière, Distribution électrique",
         "format": "Dîner de Gala",
-        "Realisation": "Event by Avant Scène"
+        "Realisation": "Avant Scène"
     },
     {
         "id": 9,
@@ -97,7 +97,7 @@
         "date": "Décembre 2024",
         "Prestations": "Écran LED, Vidéo, Sonorisation, Streaming, Lumière, Régie caméras",
         "format": "Conférence",
-        "Realisation": "Event by Green Attitude (GO Consulting)"
+        "Realisation": "Green Attitude (GO Consulting)"
     },
     {
         "id": 10,
@@ -107,7 +107,7 @@
         "date": "Décembre 2024",
         "Prestations": "Écran LED, Vidéo, Sonorisation, Streaming, Lumière, Régie caméras",
         "format": "Conférence",
-        "Realisation": "Event by Avant Scène"
+        "Realisation": "Avant Scène"
     },
     {
         "id": 11,
@@ -117,7 +117,7 @@
         "date": "Juin 2024",
         "Prestations": "Vidéo, Sonorisation, Écran LED, Matériel de traduction, Streaming, Lumière, Régie caméras",
         "format": "Forum (Plénière, Espace exposition, Espace B2B, Salle de retransmission)",
-        "Realisation": "Event by Capital Events"
+        "Realisation": "Capital Events"
     },
     {
         "id": 12,
@@ -127,7 +127,7 @@
         "date": "Décembre 2024",
         "Prestations": "Vidéo, Sonorisation, Écran LED, Matériel de traduction, Lumière",
         "format": "Awards Cérémonie",
-        "Realisation": "Event by Avant Scène"
+        "Realisation": "Avant Scène"
     },
     {
         "id": 13,
@@ -137,7 +137,7 @@
         "date": "Juillet 2024",
         "Prestations": "Écran LED, Vidéo, Sonorisation, Lumière, Régie caméras, Distribution électrique",
         "format": "Conférence",
-        "Realisation": "Event by Avant Scène"
+        "Realisation": "Avant Scène"
     },
     {
         "id": 14,
@@ -147,6 +147,6 @@
         "date": "Octobre 2024",
         "Prestations": "Écran LED, Vidéo, Sonorisation, Lumière, Régie caméras, Distribution électrique, Décoration",
         "format": "Salon (Plénière, Salles de conférences, Espace exposition, Espace B2B, Plateau TV)",
-        "Realisation": "Event by One Africa"
+        "Realisation": "One Africa"
     }
 ]

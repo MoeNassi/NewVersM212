@@ -65,7 +65,7 @@ function OurTalentsDirection() {
                 <h1>Pôle de Direction</h1>
             </div>
             <div className="CardsS">
-                <div className="WorkerCard">
+                <div id="hidden" className="WorkerCard autoscrollI">
                     <div className="employeePicSLV">
                         <img src="/pictures/ABDESSAMAD JAMAL WAFI.jpg" alt="" />
                     </div>
@@ -208,6 +208,9 @@ export default function AboutPage() {
                     <div className="headText2">
                         <h3>Mot du fondateur</h3>
                     </div>
+                    <div id="secondPic" className="LFounderS">
+                        <div className="FImage"></div>
+                    </div>
                     <div className="ContentText">
                         <div className="WordFirstP">
                             <p>Depuis sa création, l’agence M212 s’est imposée comme un acteur de référence en apportant une expertise technique et organisationnelle de classe mondiale. M212 se positionne désormais comme une agence qui regroupe des experts aux compétences techniques pluridisciplinaires et qui comptent à leur actif plus d’une vingtaine d’années d’expérience.</p>
@@ -272,7 +275,7 @@ export default function AboutPage() {
                 <OurTalentsWorkers fontSize="10%" pole={"Département Image et Ingénierie"} images={["/pictures/ISMAIL EL FILALI.jpg", "/pictures/SOUFIANE EL BOURI.jpg", "/pictures/AHMEDWAHBI.jpg", "/pictures/YOUSSEF SOUGRATI.jpg"]} names={["Ismail", "Soufiane", "Ahmed", "Youssef"]} spans={["El Filali", "El Bouri", "Wahbi", "Sougrati"]} />
                 <OurTalentsWorkers fontSize="10%" pole={"Département Son et Eclairage"} images={["/pictures/RACHID BOULLOUZE.jpg", "/pictures/KAMAL ETTALIBI.jpg", "/pictures/AMLAL SALAH.jpg", "/pictures/ADIL TIZLA.jpg", "/pictures/EZ-DDINE ELHAFIANE.jpg", "/pictures/RABII KRIKCH.jpg", "/pictures/SALAH BENKAHLA.jpg", "/pictures/RACHID ESSEBTI.jpg"]} names={["Rachid", "Kamal", "Salah", "Adil", "Ez-ddine", "Rabii", "Salah", "Rachid"]} spans={["Boullouze", "Ettalibi", "Amlal", "Tizla", "Elhafiane", "Krikch", "Benkahla", "Essbti"]} />
                 <OurTalentsWorkers fontSize="10%" pole={"Département Structure, Accastillage et Plateau scènique"} images={["/pictures/RACHID JANANE.jpg", "/pictures/SAID MOZONE.jpg"]} names={["Rachid", "Said"]} spans={["Janane", "Mozone"]} />
-                <OurTalentsWorkers fontSize="10%" pole={"Département Support & Logistque"} images={["/pictures/MOHAMED ABOULAZIZ.jpg", "/pictures/TARIK EZWAOUKI.jpg", "/pictures/ABDELLAH EL MOURABITE.jpg", "/pictures/OMAR EZRIOULI.jpg", "/pictures/JAMAL NOUR.jpg", "/pictures/LOUBNA AIT BOUIH.jpg", "/pictures/ABDELJALIL AMAL.jpg", "/pictures/MOHAMED MARDAK.jpg"]} names={["Mohamed", "Tarik", "Abdellah", "Omar", "Jamal", "Loubna", "Abdeljalil", "Mohamed"]} spans={["Aboulaziz", "Ezwaouki", "El Mourabite", "Ezriouli", "Nour", "Ait Bouih", "Amal", "Mardak"]}/>
+                <OurTalentsWorkers fontSize="10%" pole={"Département Support & Logistique"} images={["/pictures/TARIK EZWAOUKI.jpg", "/pictures/ABDELLAH EL MOURABITE.jpg", "/pictures/OMAR EZRIOULI.jpg", "/pictures/JAMAL NOUR.jpg", "/pictures/LOUBNA AIT BOUIH.jpg", "/pictures/ABDELJALIL AMAL.jpg", "/pictures/MOHAMED MARDAK.jpg"]} names={["Tarik", "Abdellah", "Omar", "Jamal", "Loubna", "Abdeljalil", "Mohamed"]} spans={["Ezwaouki", "El Mourabite", "Ezriouli", "Nour", "Ait Bouih", "Amal", "Mardak"]}/>
             </div>
             <Footer/>
         </div>
