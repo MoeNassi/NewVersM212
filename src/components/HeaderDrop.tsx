@@ -1,5 +1,6 @@
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import { useNavigate } from "react-router"
+import Language from "../assets/language.json"
 
 interface Prop {
     classname: string
@@ -9,6 +10,7 @@ interface Prop {
 }
 
 export default function HeaderDrop({classname, DropClass, dropRight, actualBar}: Prop) {
+    const [choosen, setChoosen] = useState<string>('FR')
     const navigate = useNavigate()
 
     const BurgerMenu = () => {
@@ -51,9 +53,14 @@ export default function HeaderDrop({classname, DropClass, dropRight, actualBar}:
     }
 
     useEffect(()=> {
+        var lang = localStorage.getItem('lang')
+        if (!lang)
+            localStorage.setItem('lang', 'FR')
+        lang = localStorage.getItem('lang')!
+        setChoosen(lang)
+
         const element = document.querySelector(`.TopBar .dropdown ${actualBar}`)!
         element?.classList.add('force-style')
-        console.log('->', element)
     }, [])
 
     return (
@@ -69,32 +76,48 @@ export default function HeaderDrop({classname, DropClass, dropRight, actualBar}:
                 <path d="M15 16C14.2005 16.6224 13.1502 17 12 17C10.8498 17 9.79952 16.6224 9 16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
             </svg>
             <div className="dropdown">
-                <p className="firstBar" onClick={(e)=> handleBars(e, 'AboutContainer', '/aboutus')}>A propos</p>
+                <p className="firstBar" onClick={(e)=> handleBars(e, 'AboutContainer', '/aboutus')}>{(Language as any)[choosen][0]}</p>
                 <div className={DropClass}>
-                    <p onClick={(e)=> handleBars(e, 'FounderSection', '/aboutus')}>Mot du Fondateur</p>
-                    <p onClick={(e)=> handleBars(e, 'ValuesSection', '/aboutus')}>Nos Valeurs</p>
-                    <p onClick={(e)=> handleBars(e, 'MissionsSection', '/aboutus')}>Nos missions</p>
-                    <p onClick={(e)=> handleBars(e, 'TalentsSection', '/aboutus')}>Nos talents</p>
+                    <p onClick={(e)=> handleBars(e, 'FounderSection', '/aboutus')}>{(Language as any)[choosen][61]}</p>
+                    <p onClick={(e)=> handleBars(e, 'ValuesSection', '/aboutus')}>{(Language as any)[choosen][62]}</p>
+                    <p onClick={(e)=> handleBars(e, 'MissionsSection', '/aboutus')}>{(Language as any)[choosen][63]}</p>
+                    <p onClick={(e)=> handleBars(e, 'TalentsSection', '/aboutus')}>{(Language as any)[choosen][64]}</p>
                 </div>
             </div>
             <div className="dropdown">
-                <p onClick={(e)=> handleBars(e, 'DomaineContainer', '/domaine')} className="secBar">Nos Domaines d’intervention</p>
+                <p onClick={(e)=> handleBars(e, 'DomaineContainer', '/domaine')} className="secBar">{(Language as any)[choosen][1]}</p>
                 <div className={DropClass}>
-                    <p onClick={(e)=> handleBars(e, 'DomaineCard1', '/domaine')}>Consulting</p>
-                    <p onClick={(e)=> handleBars(e, 'DomaineCard2', '/domaine')}>Image & Ingénierie</p>
-                    <p onClick={(e)=> handleBars(e, 'DomaineCard3', '/domaine')}>Son & Eclairage</p>
-                    <p onClick={(e)=> handleBars(e, 'DomaineCard4', '/domaine')}>Technique & Logistique</p>
+                    <p onClick={(e)=> handleBars(e, 'DomaineCard1', '/domaine')}>{(Language as any)[choosen][65]}</p>
+                    <p onClick={(e)=> handleBars(e, 'DomaineCard2', '/domaine')}>{(Language as any)[choosen][66]}</p>
+                    <p onClick={(e)=> handleBars(e, 'DomaineCard3', '/domaine')}>{(Language as any)[choosen][67]}</p>
+                    <p onClick={(e)=> handleBars(e, 'DomaineCard4', '/domaine')}>{(Language as any)[choosen][68]}</p>
                 </div>
             </div>
             <div className="dropdown">
-                <p onClick={(e)=> handleBars(e, 'RefContainer', '/realisations')} className="thirdBar">Nos références</p>
+                <p onClick={(e)=> handleBars(e, 'RefContainer', '/realisations')} className="thirdBar">{(Language as any)[choosen][2]}</p>
                 <div className={DropClass}>
-                    <p onClick={(e)=> handleBars(e, 'EventsContainer', '/realisations')}>Nos réalisations</p>
-                    <p onClick={(e)=> handleBars(e, 'container', '/realisations')}>Pourquoi choisir M212</p>
+                    <p onClick={(e)=> handleBars(e, 'EventsContainer', '/realisations')}>{(Language as any)[choosen][69]}</p>
+                    <p onClick={(e)=> handleBars(e, 'container', '/realisations')}>{(Language as any)[choosen][70]}</p>
                 </div>
             </div>
             <div className="dropdown">
-                <p onClick={(e)=> handleBars(e, 'ContactContainer', '/contact')} className="fourthBar">Contact</p>
+                <p onClick={(e)=> handleBars(e, 'ContactContainer', '/contact')} className="fourthBar">{(Language as any)[choosen][3]}</p>
+            </div>
+            <div className="languageC">
+                <p id="frenchlang" onClick={()=> {
+                    localStorage.setItem("lang", "FR")
+                    navigate(0)
+                }}>fr</p>
+                <span></span>
+                <p id="englishlang" onClick={()=> {
+                    localStorage.setItem("lang", "EN")
+                    navigate(0)
+                }}>en</p>
+                <span></span>
+                <p id="englishlang" onClick={()=> {
+                    localStorage.setItem("lang", "ES")
+                    navigate(0)
+                }}>es</p>
             </div>
         </nav>
     )

@@ -1,9 +1,10 @@
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 import HeaderDrop from "./HeaderDrop"
 import { useNavigate } from "react-router"
 import Footer from "./footer"
 import gsap from "gsap"
 import UpAndDown from "./upNDown"
+import Language from "../assets/language.json"
 
 interface PropsValues {
     Title:string
@@ -59,10 +60,24 @@ function OutTalentsDir() {
 }
 
 function OurTalentsDirection() {
+    const [choosen, setChoosen] = useState<string>('FR')
+
+    useEffect(()=> {
+        var lang = localStorage.getItem('lang')
+        if (!lang)
+            localStorage.setItem('lang', 'FR')
+        lang = localStorage.getItem('lang')!
+        setChoosen(lang)
+
+        gsap.fromTo(".FImage", {"y": "100%"}, {"y": "0%", duration: 1})
+        gsap.fromTo(".headText2", {"y": "-100%", "opacity": 1}, {"y": "0%", "opacity": 1, duration: 1})
+        gsap.fromTo(".ContentText", {"opacity": 0}, {"opacity": 1, duration: 1})
+    }, [])
+
     return (
         <div className="ourTalents">
             <div id="hidden" className="TitleJob autoSlideL">
-                <h1>Pôle de Direction</h1>
+                <h1>{(Language as any)[choosen][76]}</h1>
             </div>
             <div className="CardsS">
                 <div id="hidden" className="WorkerCard autoscrollI">
@@ -133,13 +148,16 @@ function OurValues({Title, Text, color, reversed}: PropsValues) {
 
 export default function AboutPage() {
     const dropRight = useRef<HTMLDivElement>(null)
+    const [choosen, setChoosen] = useState<string>('FR')
 
     const navigate = useNavigate()
 
     useEffect(()=> {
-        // const element = document.querySelectorAll('.dropdown')!
-        // element[0].classList.add('force-style')
-        // console.log('->', element[0])
+        var lang = localStorage.getItem('lang')
+        if (!lang)
+            localStorage.setItem('lang', 'FR')
+        lang = localStorage.getItem('lang')!
+        setChoosen(lang)
 
         gsap.fromTo(".FImage", {"y": "100%"}, {"y": "0%", duration: 1})
         gsap.fromTo(".headText2", {"y": "-100%", "opacity": 1}, {"y": "0%", "opacity": 1, duration: 1})
@@ -206,24 +224,24 @@ export default function AboutPage() {
                 </div>
                 <div className="RFounderS">
                     <div className="headText2">
-                        <h3>Mot du fondateur</h3>
+                        <h3>{(Language as any)[choosen][4]}</h3>
                     </div>
                     <div id="secondPic" className="LFounderS">
                         <div className="FImage"></div>
                     </div>
                     <div className="ContentText">
                         <div className="WordFirstP">
-                            <p>Depuis sa création, l’agence M212 s’est imposée comme un acteur de référence en apportant une expertise technique et organisationnelle de classe mondiale. M212 se positionne désormais comme une agence qui regroupe des experts aux compétences techniques pluridisciplinaires et qui comptent à leur actif plus d’une vingtaine d’années d’expérience.</p>
-                            <p>Les grands événements institutionnels à la fois nationaux comme internationaux portent la signature de l’équipe d’experts de M212. En effet, cette équipe a accompagné avec succès la majorité des événements d’envergure organisés au Maroc comme à l’international grâce à un haut niveau de qualité et d’exigences aux standards internationaux.</p>
-                            <p>La création de M212 incarne l’aboutissement collectif de notre histoire professionnelle qui se distingue par un haut niveau d’expertise et de maitrise des métiers de l’événementiel :</p>
+                            <p>{(Language as any)[choosen][5]}</p>
+                            <p>{(Language as any)[choosen][6]}</p>
+                            <p>{(Language as any)[choosen][7]}</p>
                         </div>
                         <div className="WordSecondP">
-                            <p>M212 est une agence globale de prestations techniques, scéniques et audiovisuelles disposant d’un savoir-faire de haut niveau et des ressources humaines qualifiées, des moyens technologiques de pointe et du matériel de dernière génération permettant d’offrir à nos clients des solutions techniques innovantes pluridisciplinaires clé-en-main.</p>
-                            <p>Notre objectif ultime est de permettre à nos audiences de vivre une expérience inédite. Au sein de M212, nous sommes convaincus que les clients n'oublieront jamais ce qu’on leur a fait ressentir… créer un lien émotionnel mémorable, telle est notre ambition qui nous anime à la naissance de chaque nouveau projet !</p>
+                            <p>{(Language as any)[choosen][8]}</p>
+                            <p>{(Language as any)[choosen][9]}</p>
                             <div className="headText3">
                                 <div className="bioInfo">
                                     <p>Abdessamad Jamal Wafi</p>
-                                    <p>Fondateur Directeur Général</p>
+                                    <p>{(Language as any)[choosen][10]}</p>
                                 </div>
                             </div>
                         </div>
@@ -232,20 +250,20 @@ export default function AboutPage() {
             </div>
             <div className="ValuesSection">
                 <div className="VHeadText">
-                    <h1>Nos <span>Valeurs</span></h1>
-                    <p>Nos valeurs sont ancrées dans notre culture d’entreprise et plus concrètement nous guident dans l’accomplissement de notre mission dans un objectif bien précis celui de renforcer en continu la performance globale de notre organisation. Expertise, Innovation, Engagement et Excellence sont ainsi les 4 valeurs qui donnent du sens à l’exercice de nos fonctions au quotidien.</p>
+                    <h1>{(Language as any)[choosen][11]} <span>{(Language as any)[choosen][12]}</span></h1>
+                    <p>{(Language as any)[choosen][13]}</p>
                 </div>
                 <div className="VContentText">
                     <div id="hidden" className="VCPartOne autoSlideL">
-                        <OurValues Title="Expertise" Text="C'est ce qui définit même votre trajectoire professionnelle au sein de M212. L'expertise de nos équipes a été prouvée durant des décennies." color={"#71c8dc"} reversed={true}/>
-                        <OurValues Title="Engagement" Text="L'engagement envers nos clients est total et relève d'une vraie quête de sens, car il représente pour l'ensemble des collaborateurs de M212 un véritable levier de performance." color={"#000000"} reversed={true}/>    
+                        <OurValues Title={(Language as any)[choosen][14]} Text={(Language as any)[choosen][15]} color={"#71c8dc"} reversed={true}/>
+                        <OurValues Title={(Language as any)[choosen][16]} Text={(Language as any)[choosen][17]} color={"#000000"} reversed={true}/>    
                     </div>
                     <div id="hidden" className="VCPartTwo autoShow">
                         <img src="/images/nosvaleurs.jpg" alt="" />
                     </div>
                     <div id="hidden" className="VCPartTree autoSlideR">
-                        <OurValues Title="Innovation" Text="La nécessité de rester créatif, de répondre aux exigences techniques & technologiques et à la pointe de procédés et de concepts événementiels, nous impose d’être innovants. Nous sommes très investis auprès de nos partenaires business pour pouvoir leur offrir des solutions novatrices et compétitives." color={"#000000"} reversed={false}/>
-                        <OurValues Title="Excellence" Text="C'est tout simplement notre façon de faire. Chaque prestation réalisée pour nos clients doit être exécutée selon la méthode M212, une méthode qui vise l'excellence à toute épreuve et qui ne laisse aucune place à l'à-peu-près." color={"#71c8dc"} reversed={false}/>
+                        <OurValues Title={(Language as any)[choosen][18]} Text={(Language as any)[choosen][19]} color={"#000000"} reversed={false}/>
+                        <OurValues Title={(Language as any)[choosen][20]} Text={(Language as any)[choosen][21]} color={"#71c8dc"} reversed={false}/>
                     </div>
                 </div>
             </div>
@@ -259,23 +277,23 @@ export default function AboutPage() {
                     </div>
                 </div>
                 <div id="hidden" className="OurMissions autoSlideR">
-                    <h2>Nos Missions</h2>
+                    <h2>{(Language as any)[choosen][22]}</h2>
                     <span></span>
-                    <p>L’agence M212 a pour mission de fournir à ses clients une offre globale de présentations techniques, scéniques et audiovisuelles de classe mondiale qu’ils soient des professionnels du secteur de l’événementiel ou des particuliers du secteur public ou privé. <p>M212 se positionne comme le partenaire de référence pour organiser ou co-organiser des événements fascinants, aux standards internationaux laissant une forte empreinte émotionnelle auprès des différents publics cibles.</p></p>
+                    <p>{(Language as any)[choosen][23]}<p>{(Language as any)[choosen][24]}</p></p>
                 </div>
             </div>
             <div className="TalentsSection">
                 <div className="VHeadText">
-                    <h1>Nos <span>Talents</span></h1>
-                    <p>Le développement humain est au cœur de notre stratégie de développement. En effet, si M212 dispose de RH qualifiées et expertes c’est grâce à l’investissement dans le savoir-faire, à la connaissance du marché local, régional et international, à la compréhension des enjeux et des défis de nos clients qu’ils soient nationaux ou internationaux.</p>
-                    <p>Nous sommes conscients que notre capital humain est notre réel avantage compétitif au-delà de l’acquisition de tout matériel ou de technologie, la différence réside dans la qualité des Femmes et des Hommes qui pilotent ces moyens.</p>
+                    <h1>{(Language as any)[choosen][25]} <span>{(Language as any)[choosen][26]}</span></h1>
+                    <p>{(Language as any)[choosen][27]}</p>
+                    <p>{(Language as any)[choosen][28]}</p>
                 </div>
                 <OurTalentsDirection />
                 <OutTalentsDir/>
-                <OurTalentsWorkers fontSize="10%" pole={"Département Image et Ingénierie"} images={["/pictures/ISMAIL EL FILALI.jpg", "/pictures/SOUFIANE EL BOURI.jpg", "/pictures/AHMEDWAHBI.jpg", "/pictures/YOUSSEF SOUGRATI.jpg"]} names={["Ismail", "Soufiane", "Ahmed", "Youssef"]} spans={["El Filali", "El Bouri", "Wahbi", "Sougrati"]} />
-                <OurTalentsWorkers fontSize="10%" pole={"Département Son et Eclairage"} images={["/pictures/RACHID BOULLOUZE.jpg", "/pictures/KAMAL ETTALIBI.jpg", "/pictures/AMLAL SALAH.jpg", "/pictures/ADIL TIZLA.jpg", "/pictures/EZ-DDINE ELHAFIANE.jpg", "/pictures/RABII KRIKCH.jpg", "/pictures/SALAH BENKAHLA.jpg", "/pictures/RACHID ESSEBTI.jpg"]} names={["Rachid", "Kamal", "Salah", "Adil", "Ez-ddine", "Rabii", "Salah", "Rachid"]} spans={["Boullouze", "Ettalibi", "Amlal", "Tizla", "Elhafiane", "Krikch", "Benkahla", "Essbti"]} />
-                <OurTalentsWorkers fontSize="10%" pole={"Département Structure, Accastillage et Plateau scènique"} images={["/pictures/RACHID JANANE.jpg", "/pictures/SAID MOZONE.jpg"]} names={["Rachid", "Said"]} spans={["Janane", "Mozone"]} />
-                <OurTalentsWorkers fontSize="10%" pole={"Département Support & Logistique"} images={["/pictures/TARIK EZWAOUKI.jpg", "/pictures/ABDELLAH EL MOURABITE.jpg", "/pictures/OMAR EZRIOULI.jpg", "/pictures/JAMAL NOUR.jpg", "/pictures/LOUBNA AIT BOUIH.jpg", "/pictures/ABDELJALIL AMAL.jpg", "/pictures/MOHAMED MARDAK.jpg"]} names={["Tarik", "Abdellah", "Omar", "Jamal", "Loubna", "Abdeljalil", "Mohamed"]} spans={["Ezwaouki", "El Mourabite", "Ezriouli", "Nour", "Ait Bouih", "Amal", "Mardak"]}/>
+                <OurTalentsWorkers fontSize="10%" pole={(Language as any)[choosen][77]} images={["/pictures/ISMAIL EL FILALI.jpg", "/pictures/SOUFIANE EL BOURI.jpg", "/pictures/AHMEDWAHBI.jpg", "/pictures/YOUSSEF SOUGRATI.jpg"]} names={["Ismail", "Soufiane", "Ahmed", "Youssef"]} spans={["El Filali", "El Bouri", "Wahbi", "Sougrati"]} />
+                <OurTalentsWorkers fontSize="10%" pole={(Language as any)[choosen][78]} images={["/pictures/RACHID BOULLOUZE.jpg", "/pictures/KAMAL ETTALIBI.jpg", "/pictures/AMLAL SALAH.jpg", "/pictures/ADIL TIZLA.jpg", "/pictures/EZ-DDINE ELHAFIANE.jpg", "/pictures/RABII KRIKCH.jpg", "/pictures/SALAH BENKAHLA.jpg", "/pictures/RACHID ESSEBTI.jpg"]} names={["Rachid", "Kamal", "Salah", "Adil", "Ez-ddine", "Rabii", "Salah", "Rachid"]} spans={["Boullouze", "Ettalibi", "Amlal", "Tizla", "Elhafiane", "Krikch", "Benkahla", "Essbti"]} />
+                <OurTalentsWorkers fontSize="10%" pole={(Language as any)[choosen][79]} images={["/pictures/RACHID JANANE.jpg", "/pictures/SAID MOZONE.jpg"]} names={["Rachid", "Said"]} spans={["Janane", "Mozone"]} />
+                <OurTalentsWorkers fontSize="10%" pole={(Language as any)[choosen][80]} images={["/pictures/TARIK EZWAOUKI.jpg", "/pictures/ABDELLAH EL MOURABITE.jpg", "/pictures/OMAR EZRIOULI.jpg", "/pictures/JAMAL NOUR.jpg", "/pictures/LOUBNA AIT BOUIH.jpg", "/pictures/ABDELJALIL AMAL.jpg", "/pictures/MOHAMED MARDAK.jpg"]} names={["Tarik", "Abdellah", "Omar", "Jamal", "Loubna", "Abdeljalil", "Mohamed"]} spans={["Ezwaouki", "El Mourabite", "Ezriouli", "Nour", "Ait Bouih", "Amal", "Mardak"]}/>
             </div>
             <Footer/>
         </div>

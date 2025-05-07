@@ -328,8 +328,13 @@
     .up, .down {
         left: 86%;
     }
+    .eventInfoCont {
+        display: flex;
+        flex-direction: column;
+    }
     .eventPopInfo {
-        display: none;
+        padding: 0;
+        width: 100%;
     }
     #PopInfoHidden {
         display: block !important;
@@ -453,6 +458,9 @@
     }
     .VHeadText {
         height: auto;
+    }
+    .eventPopInfo > p, .eventPopInfo > h1 {
+        font-size: 15px;
     }
 }
 @media screen and (max-width: 480px) {

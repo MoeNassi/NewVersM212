@@ -1,9 +1,10 @@
 import { useNavigate } from "react-router";
 import Footer from "./footer";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import HeaderDrop from "./HeaderDrop";
 import gsap from "gsap";
 import UpAndDown from "./upNDown";
+import Language from "../assets/language.json"
 
 interface DomainsProps {
     image:string
@@ -12,6 +13,20 @@ interface DomainsProps {
 }
 
 function OurDomainsA({image, title, span}:DomainsProps) {
+    const [choosen, setChoosen] = useState<string>('FR')
+
+    useEffect(()=> {
+        var lang = localStorage.getItem('lang')
+        if (!lang)
+            localStorage.setItem('lang', 'FR')
+        lang = localStorage.getItem('lang')!
+        setChoosen(lang)
+
+        gsap.fromTo(".FImage", {"y": "100%"}, {"y": "0%", duration: 1})
+        gsap.fromTo(".headText2", {"y": "-100%", "opacity": 1}, {"y": "0%", "opacity": 1, duration: 1})
+        gsap.fromTo(".ContentText", {"opacity": 0}, {"opacity": 1, duration: 1})
+    }, [])
+
     return (
         <div id="hidden" style={{"flexDirection": "row-reverse"}} className="DomaineCard4 autoSlideR">
             <div style={{"justifyContent": "flex-end"}} className="domainesImage">
@@ -23,8 +38,8 @@ function OurDomainsA({image, title, span}:DomainsProps) {
                     <div style={{"inset": "80%"}}></div>
                 </div>
                 <div style={{"alignItems": "flex-end", "textAlign": "right"}}  className="domaineText">
-                    <p><span>Scéne et accroches</span> tel un écrin pour abriter votre événement en garantissant une parfaite maîtrise des installations techniques.</p>
-                    <p><span>Energie</span> pour une alimentation électrique fiable et sécurisée vitale à la réalisation du projet.</p>
+                    <p><span>{(Language as any)[choosen][57]}</span>{(Language as any)[choosen][58]}</p>
+                    <p><span>{(Language as any)[choosen][59]}</span>{(Language as any)[choosen][60]}</p>
                 </div>
             </div>
         </div>
@@ -32,7 +47,15 @@ function OurDomainsA({image, title, span}:DomainsProps) {
 }
 
 function OurDomainsI({image, title, span}:DomainsProps) {
+    const [choosen, setChoosen] = useState<string>('FR')
+
     useEffect(() => {
+        var lang = localStorage.getItem('lang')
+        if (!lang)
+            localStorage.setItem('lang', 'FR')
+        lang = localStorage.getItem('lang')!
+        setChoosen(lang)
+
         gsap.fromTo(".domainesInfo", {"x": "-100%"}, {"x": 0, duration: 1})
         gsap.fromTo(".domainesImage", {"x": "100%"}, {"x": 0, duration: 1})
     }, [])
@@ -48,9 +71,9 @@ function OurDomainsI({image, title, span}:DomainsProps) {
                     <div style={{"inset": "80%"}}></div>
                 </div>
                 <div style={{"alignItems": "flex-end", "textAlign": "right"}}  className="domaineText">
-                    <h3>Streaming et Plateforme Zoom:</h3>
-                    <p>Retransmission en direct qui permet de connecter des publics du monde entier, ou selon le public cible afin de suivre votre événement à distance et en live.</p>
-                    <p><span>Vidéo</span> ou l'art de sublimer par l'image et enrichir l'expérience immersive visuelle de l'audiance.</p>
+                    <h3>{(Language as any)[choosen][43]}</h3>
+                    <p>{(Language as any)[choosen][44]}</p>
+                    <p><span>{(Language as any)[choosen][45]}</span>{(Language as any)[choosen][46]}</p>
                 </div>
             </div>
         </div>
@@ -58,7 +81,15 @@ function OurDomainsI({image, title, span}:DomainsProps) {
 }
 
 function OurDomainsC({image, title, span}:DomainsProps) {
+    const [choosen, setChoosen] = useState<string>('FR')
+    
     useEffect(() => {
+        var lang = localStorage.getItem('lang')
+        if (!lang)
+            localStorage.setItem('lang', 'FR')
+        lang = localStorage.getItem('lang')!
+        setChoosen(lang)
+    
         gsap.fromTo(".domainesInfo", {"x": "100%"}, {"x": 0, duration: 1})
         gsap.fromTo(".domainesImage", {"x": "-100%"}, {"x": 0, duration: 1})
     }, [])
@@ -74,11 +105,11 @@ function OurDomainsC({image, title, span}:DomainsProps) {
                     <div></div>
                 </div>
                 <div className="domaineText">
-                    <h3>Bureau d’étude :</h3>
-                    <p>Proposition de solutions techniques sur mesure pour transformer votre projet en un concept créatif mémorable de la conception à la réalisation de votre événement.</p>
-                    <h3>Régie technique des lieux :</h3>
-                    <p>prise en charge de tous les aspects techniques des lieux : repérage, maquette 3D, conseil en faisabilité technique, en organisation, en valorisation et en agencement des lieux, etc.</p>
-                    <p>afin de sublimer votre événement.</p>
+                    <h3>{(Language as any)[choosen][36]}</h3>
+                    <p>{(Language as any)[choosen][37]}</p>
+                    <h3>{(Language as any)[choosen][38]}</h3>
+                    <p>{(Language as any)[choosen][39]}</p>
+                    <p>{(Language as any)[choosen][40]}</p>
                 </div>
             </div>
         </div>
@@ -86,6 +117,16 @@ function OurDomainsC({image, title, span}:DomainsProps) {
 }
 
 function OurDomainsS({image, title, span}:DomainsProps) {
+    const [choosen, setChoosen] = useState<string>('FR')
+
+    useEffect(() => {
+        var lang = localStorage.getItem('lang')
+        if (!lang)
+            localStorage.setItem('lang', 'FR')
+        lang = localStorage.getItem('lang')!
+        setChoosen(lang)
+    }, [])
+
     return (
         <div id="hidden" className="DomaineCard3 autoSlideL">
             <div className="domainesImage">
@@ -97,10 +138,10 @@ function OurDomainsS({image, title, span}:DomainsProps) {
                     <div></div>
                 </div>
                 <div className="domaineText">
-                    <p><span>Son</span> pour que l'expérience immersive de l‘audience soit totale portée par une qualité de son unique.</p>
-                    <h3>Traduction Simultanée</h3>
-                    <p>Matériel de traduction simultanée de pointe garantissant une communication fluide et sans faille pour un impact maximal.</p>
-                    <p><span>Eclairage</span> pour des conceptions scéniques et donner au spectacle toute sa splendeur.</p>
+                    <p><span>{(Language as any)[choosen][49]}</span>{(Language as any)[choosen][50]}</p>
+                    <h3>{(Language as any)[choosen][51]}</h3>
+                    <p>{(Language as any)[choosen][52]}</p>
+                    <p><span>{(Language as any)[choosen][53]}</span>{(Language as any)[choosen][54]}</p>
                 </div>
             </div>
         </div>
@@ -109,6 +150,7 @@ function OurDomainsS({image, title, span}:DomainsProps) {
 
 export default function DomainesPage() {
     const dropRight = useRef<HTMLDivElement>(null)
+    const [choosen, setChoosen] = useState<string>('FR')
 
     const navigate = useNavigate()
 
@@ -133,6 +175,14 @@ export default function DomainesPage() {
             dropRight.current?.classList.add('open')
         }
     }
+
+    useEffect(()=> {
+        var lang = localStorage.getItem('lang')
+        if (!lang)
+            localStorage.setItem('lang', 'FR')
+        lang = localStorage.getItem('lang')!
+        setChoosen(lang)
+    }, [])
 
     const handleScroll = () => {
         const elements = document.querySelectorAll('#hidden')
@@ -165,10 +215,10 @@ export default function DomainesPage() {
                     <span></span>
                 </div>
             </div>
-            <OurDomainsC image={"/images/consulting.jpg"} title={"Consulting"} span=" : Études & Conseils"/>
-            <OurDomainsI image={"/images/image.jpeg"} title="Image" span=" & Ingénierie" />
-            <OurDomainsS image={"/images/son.png"} title={"Son"} span=" & Eclairage" />
-            <OurDomainsA image={"/images/structure.jpeg"} title={"Structure, Accastillage"} span=" & Plateau Scénique" />
+            <OurDomainsC image={"/images/consulting.jpg"} title={(Language as any)[choosen][34]} span={(Language as any)[choosen][35]}/>
+            <OurDomainsI image={"/images/image.jpeg"} title={(Language as any)[choosen][41]} span={(Language as any)[choosen][42]} />
+            <OurDomainsS image={"/images/son.png"} title={(Language as any)[choosen][47]} span={(Language as any)[choosen][48]} />
+            <OurDomainsA image={"/images/structure.jpeg"} title={(Language as any)[choosen][55]} span={(Language as any)[choosen][56]} />
             <Footer/>
         </div>
     )

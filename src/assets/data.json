@@ -1,152 +1,488 @@
-[
-    {
-        "id": 0,
-        "images": ["/events/qatar/1.jpeg", "/events/qatar/2.jpeg", "/events/qatar/3.jpeg", "/events/qatar/4.jpeg", "/events/qatar/5.jpeg", "/events/qatar/6.jpeg", "/events/qatar/7.jpeg", "/events/qatar/8.jpeg"],
-        "name": "QATAR AFRICA BUSINESS FORUM",
-        "Place": "Hôtel Four Seasons Marrakech",
-        "date": "Novembre 2024",
-        "Prestations": "Vidéo, Sonorisation, Écran LED, Matériel de traduction, Lumière, Régie caméras",
-        "format": "Conférence",
-        "Realisation": "Capital Events"
-    },
-    {
-        "id": 1,
-        "name": "MIM FASHION SHOW 2024",
-        "images": ["/events/fashion/1.jpeg", "/events/fashion/2.jpeg", "/events/fashion/3.jpeg", "/events/fashion/4.jpeg", "/events/fashion/5.jpeg"],
-        "Place": "O.F.E.C (Office des Foires et Expositions de Casablanca)",
-        "date": "Novembre 2024",
-        "Prestations": "Vidéo, Sonorisation, Écran LED, Lumière, Régie caméras, Décoration",
-        "format": "Fashion Show",
-        "Realisation": "Casa Moda Academy"
-    },
-    {
-        "id": 2,
-        "name": "JOURNÉE NATIONALE DE L'INDUSTRIE",
-        "images": ["/events/cgem/1.jpeg", "/events/cgem/2.jpeg", "/events/cgem/3.jpeg", "/events/cgem/4.jpeg", "/events/cgem/5.jpeg"],
-        "Place": "UM6P de Benguerir",
-        "date": "Octobre 2024",
-        "Prestations": "Vidéo, Sonorisation, Écran LED, Matériel de traduction, Lumière, Régie caméras",
-        "format": "Conférence",
-        "Realisation": "CGEM"
-    },
-    {
-        "id": 3,
-        "name": "RENCONTRE ENTREPRENEURIALE MAROC - FRANCE",
-        "images": ["/events/uir/1.jpeg", "/events/uir/2.jpeg", "/events/uir/3.jpeg", "/events/uir/4.jpeg"],
-        "Place": "Université Internationale de Rabat",
-        "date": "Octobre 2024",
-        "Prestations": "Vidéo, Sonorisation, Écran LED, Lumière, Régie caméras",
-        "format": "Conférence",
-        "Realisation": "CGEM"
-    },
-    {
-        "id": 4,
-        "name": "AFIS 2024 (AFRICA FINANCIAL SUMMIT)",
-        "images": ["/events/AFIS/1.jpeg", "/events/AFIS/2.jpeg", "/events/AFIS/3.jpeg", "/events/AFIS/4.jpeg"],
-        "Place": "Hôtel HYATT REGENCY CASABLANCA",
-        "date": "Décembre 2024",
-        "Prestations": "Écran LED, Vidéo, Sonorisation, Décoration, Lumière, Régie caméras",
-        "format": "Congrès (Plénière, Salles de Sous commissions, Espaces B2B, Stands)",
-        "Realisation": "Jeune Afrique"
-    },
-    {
-        "id": 5,
-        "name": "MARRAKECH AIR SHOW 2024",
-        "images": ["/events/mas/1.jpeg", "/events/mas/2.jpeg", "/events/mas/3.jpeg", "/events/mas/4.jpeg", "/events/mas/5.jpeg", "/events/mas/6.jpeg", "/events/mas/7.jpeg", "/events/mas/8.jpeg", "/events/mas/9.jpeg", "/events/mas/10.jpeg"],
-        "Place": "LA BASE AÉRIENNE MILITAIRE DE MARRAKECH",
-        "date": "Octobre 2024",
-        "Prestations": "Écran LED, Vidéo, Sonorisation, Lumière, Régie caméras",
-        "format": "Salon de l'Aviation (Plénière, Espaces d'exposition)",
-        "Realisation": "Capital Events"
-    },
-    {
-        "id": 6,
-        "name": "PMI CONFERENCE",
-        "images": ["/events/PMI/1.jpeg", "/events/PMI/2.jpeg"],
-        "Place": "Hôtel FAIRMONT ROYAL PAL MARRAKECH",
-        "date": "Septembre 2024",
-        "Prestations": "Écran LED, Vidéo, Sonorisation, Lumière",
-        "format": "Conférence",
-        "Realisation": "Stours"
-    },
-    {
-        "id": 7,
-        "name": "RIBXCAR",
-        "images": ["/events/RIBXCAR/1.jpeg", "/events/RIBXCAR/2.jpeg", "/events/RIBXCAR/3.jpeg", "/events/RIBXCAR/4.jpeg", "/events/RIBXCAR/5.jpeg"],
-        "Place": "Hôtel TIGMIZA MARRAKECH",
-        "date": "Septembre 2024",
-        "Prestations": "Vidéo, Sonorisation, Écran LED, Matériel de traduction, Lumière, Décoration, Régie caméras",
-        "format": "Conférence",
-        "Realisation": "M212"
-    },
-    {
-        "id": 8,
-        "name": "DÎNER ROYAL À L’OCCASION DU FESTIVAL DU FILM DE MARRAKECH",
-        "images": ["/events/diner/1.jpeg", "/events/diner/2.jpeg", "/events/diner/3.jpeg", "/events/diner/4.jpeg", "/events/diner/5.jpeg", "/events/diner/6.jpeg", "/events/diner/7.jpeg", "/events/diner/8.jpeg"],
-        "Place": "PALAIS EL BADII",
-        "date": "Novembre 2024",
-        "Prestations": "Sonorisation, Lumière, Distribution électrique",
-        "format": "Dîner de Gala",
-        "Realisation": "Avant Scène"
-    },
-    {
-        "id": 9,
-        "name": "IFC (International Finance Corporation)",
-        "images": ["/events/IFC/1.jpeg", "/events/IFC/2.jpeg"],
-        "Place": "Hôtel HYATT REGENCY CASABLANCA",
-        "date": "Décembre 2024",
-        "Prestations": "Écran LED, Vidéo, Sonorisation, Streaming, Lumière, Régie caméras",
-        "format": "Conférence",
-        "Realisation": "Green Attitude (GO Consulting)"
-    },
-    {
-        "id": 10,
-        "name": "CAF (54 MEMBER ASSOCIATIONS MEETING)",
-        "images": ["/events/CAF/1.jpeg", "/events/CAF/2.jpeg", "/events/CAF/3.jpeg", "/events/CAF/4.jpeg"],
-        "Place": "Hôtel Sofitel Marrakech",
-        "date": "Décembre 2024",
-        "Prestations": "Écran LED, Vidéo, Sonorisation, Streaming, Lumière, Régie caméras",
-        "format": "Conférence",
-        "Realisation": "Avant Scène"
-    },
-    {
-        "id": 11,
-        "name": "INTERNATIONAL AFRICA DEVELOPMENT FORUM",
-        "images": ["/events/IADF/1.jpeg", "/events/IADF/2.jpeg", "/events/IADF/3.jpeg", "/events/IADF/4.jpeg"],
-        "Place": "HÔTEL HYATT CASABLANCA",
-        "date": "Juin 2024",
-        "Prestations": "Vidéo, Sonorisation, Écran LED, Matériel de traduction, Streaming, Lumière, Régie caméras",
-        "format": "Forum (Plénière, Espace exposition, Espace B2B, Salle de retransmission)",
-        "Realisation": "Capital Events"
-    },
-    {
-        "id": 12,
-        "name": "CAF AWARDS 2024",
-        "images": ["/events/CAFawards/1.jpeg", "/events/CAFawards/2.jpeg", "/events/CAFawards/3.jpeg", "/events/CAFawards/4.jpeg", "/events/CAFawards/5.jpeg", "/events/CAFawards/6.jpeg"],
-        "Place": "Palais des Congrès de Marrakech",
-        "date": "Décembre 2024",
-        "Prestations": "Vidéo, Sonorisation, Écran LED, Matériel de traduction, Lumière",
-        "format": "Awards Cérémonie",
-        "Realisation": "Avant Scène"
-    },
-    {
-        "id": 13,
-        "name": "ESSAOUIRA INVESTOR DAY",
-        "images": ["/events/essa/1.jpeg", "/events/essa/2.jpeg", "/events/essa/3.jpeg", "/events/essa/4.jpeg", "/events/essa/5.jpeg", "/events/essa/6.jpeg"],
-        "Place": "Hôtel Sofitel Essaouira Mogador",
-        "date": "Juillet 2024",
-        "Prestations": "Écran LED, Vidéo, Sonorisation, Lumière, Régie caméras, Distribution électrique",
-        "format": "Conférence",
-        "Realisation": "Avant Scène"
-    },
-    {
-        "id": 14,
-        "name": "APIDE 2024 (Africa Pay & ID Expo)",
-        "images": ["/events/APIDE/1.jpeg", "/events/APIDE/2.jpeg", "/events/APIDE/3.jpeg", "/events/APIDE/4.jpeg", "/events/APIDE/5.jpeg", "/events/APIDE/6.jpeg"],
-        "Place": "Circuit Moulay Hassan, Marrakech",
-        "date": "Octobre 2024",
-        "Prestations": "Écran LED, Vidéo, Sonorisation, Lumière, Régie caméras, Distribution électrique, Décoration",
-        "format": "Salon (Plénière, Salles de conférences, Espace exposition, Espace B2B, Plateau TV)",
-        "Realisation": "One Africa"
-    }
-]
+{
+    "FR": [
+        {
+            "id": 0,
+            "name": "4th GLOBAL MINISTERIAL CONFERENCE ON ROAD SAFETY",
+            "images": ["/events/gmcors/4.jpg", "/events/gmcors/2.jpg", "/events/gmcors/3.jpg", "/events/gmcors/1.jpg", "/events/gmcors/5.jpg", "/events/gmcors/6.jpg", "/events/gmcors/7.jpg"],
+            "Place": "PALAIS DES CONGRES DE MARRAKECH ( MOVENPICK )",
+            "date": "Février 2025",
+            "Prestations": "écran led, vidéo,  sonorisation, décoration, lumière, matériel de traduction, streaming, régie caméras",
+            "format": "Congrès ( Plénière, Salles de Sous commissions, studios TV,  stands ) ",
+            "Realisation": "Silver Tours"
+        },
+        {
+            "id": 1,
+            "images": ["/events/qatar/1.jpeg", "/events/qatar/3.jpeg", "/events/qatar/4.jpeg", "/events/qatar/5.jpeg", "/events/qatar/6.jpeg", "/events/qatar/7.jpeg", "/events/qatar/8.jpeg"],
+            "name": "QATAR AFRICA BUSINESS FORUM",
+            "Place": "Hôtel Four Seasons Marrakech",
+            "date": "Novembre 2024",
+            "Prestations": "Vidéo, Sonorisation, Écran LED, Matériel de traduction, Lumière, Régie caméras",
+            "format": "Conférence",
+            "Realisation": "Capital Events"
+        },
+        {
+            "id": 2,
+            "name": "MIM FASHION SHOW 2024",
+            "images": ["/events/fashion/1.jpeg", "/events/fashion/2.jpeg", "/events/fashion/3.jpeg", "/events/fashion/4.jpeg", "/events/fashion/5.jpeg"],
+            "Place": "O.F.E.C (Office des Foires et Expositions de Casablanca)",
+            "date": "Novembre 2024",
+            "Prestations": "Vidéo, Sonorisation, Écran LED, Lumière, Régie caméras, Décoration",
+            "format": "Fashion Show",
+            "Realisation": "Casa Moda Academy"
+        },
+        {
+            "id": 3,
+            "name": "JOURNÉE NATIONALE DE L'INDUSTRIE",
+            "images": ["/events/cgem/1.jpeg", "/events/cgem/2.jpeg", "/events/cgem/3.jpeg", "/events/cgem/4.jpeg", "/events/cgem/5.jpeg"],
+            "Place": "UM6P de Benguerir",
+            "date": "Octobre 2024",
+            "Prestations": "Vidéo, Sonorisation, Écran LED, Matériel de traduction, Lumière, Régie caméras",
+            "format": "Conférence",
+            "Realisation": "CGEM"
+        },
+        {
+            "id": 4,
+            "name": "RENCONTRE ENTREPRENEURIALE MAROC - FRANCE",
+            "images": ["/events/uir/1.jpeg", "/events/uir/2.jpeg", "/events/uir/3.jpeg"],
+            "Place": "Université Internationale de Rabat",
+            "date": "Octobre 2024",
+            "Prestations": "Vidéo, Sonorisation, Écran LED, Lumière, Régie caméras",
+            "format": "Conférence",
+            "Realisation": "CGEM"
+        },
+        {
+            "id": 5,
+            "name": "AFIS 2024 (AFRICA FINANCIAL SUMMIT)",
+            "images": ["/events/AFIS/2.jpeg", "/events/AFIS/1.jpeg", "/events/AFIS/3.jpeg", "/events/AFIS/4.jpeg"],
+            "Place": "Hôtel HYATT REGENCY CASABLANCA",
+            "date": "Décembre 2024",
+            "Prestations": "Écran LED, Vidéo, Sonorisation, Décoration, Lumière, Régie caméras",
+            "format": "Congrès (Plénière, Salles de Sous commissions, Espaces B2B, Stands)",
+            "Realisation": "Jeune Afrique"
+        },
+        {
+            "id": 6,
+            "name": "MARRAKECH AIR SHOW 2024",
+            "images": ["/events/mas/4.jpeg", "/events/mas/2.jpeg", "/events/mas/3.jpeg", "/events/mas/1.jpeg", "/events/mas/5.jpeg", "/events/mas/6.jpeg", "/events/mas/7.jpeg", "/events/mas/8.jpeg", "/events/mas/9.jpeg", "/events/mas/10.jpeg"],
+            "Place": "LA BASE AÉRIENNE MILITAIRE DE MARRAKECH",
+            "date": "Octobre 2024",
+            "Prestations": "Écran LED, Vidéo, Sonorisation, Lumière, Régie caméras",
+            "format": "Salon de l'Aviation (Plénière, Espaces d'exposition)",
+            "Realisation": "Capital Events"
+        },
+        {
+            "id": 7,
+            "name": "PMI CONFERENCE",
+            "images": ["/events/PMI/1.jpeg", "/events/PMI/2.jpeg"],
+            "Place": "Hôtel FAIRMONT ROYAL PAL MARRAKECH",
+            "date": "Septembre 2024",
+            "Prestations": "Écran LED, Vidéo, Sonorisation, Lumière",
+            "format": "Conférence",
+            "Realisation": "Stours"
+        },
+        {
+            "id": 8,
+            "name": "RIBXCAR",
+            "images": ["/events/RIBXCAR/1.jpeg", "/events/RIBXCAR/2.jpeg", "/events/RIBXCAR/3.jpeg", "/events/RIBXCAR/4.jpeg", "/events/RIBXCAR/5.jpeg"],
+            "Place": "Hôtel TIGMIZA MARRAKECH",
+            "date": "Septembre 2024",
+            "Prestations": "Vidéo, Sonorisation, Écran LED, Matériel de traduction, Lumière, Décoration, Régie caméras",
+            "format": "Conférence",
+            "Realisation": "M212"
+        },
+        {
+            "id": 9,
+            "name": "DÎNER ROYAL À L’OCCASION DU FESTIVAL DU FILM DE MARRAKECH",
+            "images": ["/events/diner/1.jpeg", "/events/diner/2.jpeg", "/events/diner/3.jpeg", "/events/diner/4.jpeg", "/events/diner/5.jpeg", "/events/diner/6.jpeg", "/events/diner/7.jpeg", "/events/diner/8.jpeg"],
+            "Place": "PALAIS EL BADII",
+            "date": "Novembre 2024",
+            "Prestations": "Sonorisation, Lumière, Distribution électrique",
+            "format": "Dîner de Gala",
+            "Realisation": "Avant Scène"
+        },
+        {
+            "id": 10,
+            "name": "IFC (International Finance Corporation)",
+            "images": ["/events/IFC/1.jpeg", "/events/IFC/2.jpeg"],
+            "Place": "Hôtel HYATT REGENCY CASABLANCA",
+            "date": "Décembre 2024",
+            "Prestations": "Écran LED, Vidéo, Sonorisation, Streaming, Lumière, Régie caméras",
+            "format": "Conférence",
+            "Realisation": "Green Attitude (GO Consulting)"
+        },
+        {
+            "id": 11,
+            "name": "CAF (54 MEMBER ASSOCIATIONS MEETING)",
+            "images": ["/events/CAF/1.jpeg", "/events/CAF/2.jpeg", "/events/CAF/3.jpeg", "/events/CAF/4.jpeg"],
+            "Place": "Hôtel Sofitel Marrakech",
+            "date": "Décembre 2024",
+            "Prestations": "Écran LED, Vidéo, Sonorisation, Streaming, Lumière, Régie caméras",
+            "format": "Conférence",
+            "Realisation": "Avant Scène"
+        },
+        {
+            "id": 12,
+            "name": "INTERNATIONAL AFRICA DEVELOPMENT FORUM",
+            "images": ["/events/IADF/1.jpeg", "/events/IADF/3.jpeg", "/events/IADF/4.jpeg"],
+            "Place": "HÔTEL HYATT CASABLANCA",
+            "date": "Juin 2024",
+            "Prestations": "Vidéo, Sonorisation, Écran LED, Matériel de traduction, Streaming, Lumière, Régie caméras",
+            "format": "Forum (Plénière, Espace exposition, Espace B2B, Salle de retransmission)",
+            "Realisation": "Capital Events"
+        },
+        {
+            "id": 13,
+            "name": "CAF AWARDS 2024",
+            "images": ["/events/CAFawards/1.jpeg", "/events/CAFawards/2.jpeg", "/events/CAFawards/3.jpeg", "/events/CAFawards/4.jpeg", "/events/CAFawards/5.jpeg", "/events/CAFawards/6.jpeg"],
+            "Place": "Palais des Congrès de Marrakech",
+            "date": "Décembre 2024",
+            "Prestations": "Vidéo, Sonorisation, Écran LED, Matériel de traduction, Lumière",
+            "format": "Awards Cérémonie",
+            "Realisation": "Avant Scène"
+        },
+        {
+            "id": 14,
+            "name": "ESSAOUIRA INVESTOR DAY",
+            "images": ["/events/essa/1.jpeg", "/events/essa/2.jpeg", "/events/essa/3.jpeg", "/events/essa/4.jpeg", "/events/essa/5.jpeg", "/events/essa/6.jpeg"],
+            "Place": "Hôtel Sofitel Essaouira Mogador",
+            "date": "Juillet 2024",
+            "Prestations": "Écran LED, Vidéo, Sonorisation, Lumière, Régie caméras, Distribution électrique",
+            "format": "Conférence",
+            "Realisation": "Avant Scène"
+        },
+        {
+            "id": 15,
+            "name": "APIDE 2024 (Africa Pay & ID Expo)",
+            "images": ["/events/APIDE/5.jpeg", "/events/APIDE/2.jpeg", "/events/APIDE/3.jpeg", "/events/APIDE/4.jpeg", "/events/APIDE/1.jpeg", "/events/APIDE/6.jpeg"],
+            "Place": "Circuit Moulay Hassan, Marrakech",
+            "date": "Octobre 2024",
+            "Prestations": "Écran LED, Vidéo, Sonorisation, Lumière, Régie caméras, Distribution électrique, Décoration",
+            "format": "Salon (Plénière, Salles de conférences, Espace exposition, Espace B2B, Plateau TV)",
+            "Realisation": "One Africa"
+        }
+    ],
+    "EN": [
+        {
+            "id": 0,
+            "name": "4th GLOBAL MINISTERIAL CONFERENCE ON ROAD SAFETY",
+            "images": ["/events/gmcors/4.jpg", "/events/gmcors/2.jpg", "/events/gmcors/3.jpg", "/events/gmcors/1.jpg", "/events/gmcors/5.jpg", "/events/gmcors/6.jpg", "/events/gmcors/7.jpg"],
+            "Place": "PALAIS DES CONGRES DE MARRAKECH ( MOVENPICK )",
+            "date": "Febrary 2024",
+            "Prestations": "Video production, sound system, LED screens, translation equipment, lighting, decoration and camera control room",
+            "format": "Congress (Plenary, Committee rooms, TV studios TV,  Exhibition stands)",
+            "Realisation": "Silver Tours"
+        },
+        {
+            "id": 1,
+            "images": ["/events/qatar/1.jpeg", "/events/qatar/3.jpeg", "/events/qatar/4.jpeg", "/events/qatar/5.jpeg", "/events/qatar/6.jpeg", "/events/qatar/7.jpeg", "/events/qatar/8.jpeg"],
+            "name": "QATAR AFRICA BUSINESS FORUM",
+            "Place": "Four Seasons Marrakech Hotel",
+            "date": "November 2024",
+            "Prestations": "Video production, sound system, LED screens, translation equipment, lighting, and camera control room",
+            "format": "Conference",
+            "Realisation": "Capital Events"
+        },
+        {
+            "id": 2,
+            "name": "MIM FASHION SHOW 2024",
+            "images": ["/events/fashion/1.jpeg", "/events/fashion/2.jpeg", "/events/fashion/3.jpeg", "/events/fashion/4.jpeg", "/events/fashion/5.jpeg"],
+            "Place": "O.F.E.C (Casablanca Fair and Exhibition Office) ",
+            "date": "November 2024",
+            "Prestations": "Video production, sound system, LED screens , lighting, camera control room and decoration",
+            "format": "Fashion Show",
+            "Realisation": "Casa Moda Academy"
+        },
+        {
+            "id": 3,
+            "name": "NATIONAL INDUSTRY DAY",
+            "images": ["/events/cgem/1.jpeg", "/events/cgem/2.jpeg", "/events/cgem/3.jpeg", "/events/cgem/4.jpeg", "/events/cgem/5.jpeg"],
+            "Place": "UM6P de Benguerir",
+            "date": "October 2024",
+            "Prestations": "Video production, sound system, LED screens, translation equipment, lighting, and camera control room",
+            "format": "Conference",
+            "Realisation": "CGEM"
+        },
+        {
+            "id": 4,
+            "name": "Entrepreneurial Meeting MOROCCO - FRANCE",
+            "images": ["/events/uir/1.jpeg", "/events/uir/2.jpeg", "/events/uir/3.jpeg"],
+            "Place": "International University of Rabat",
+            "date": "October 2024",
+            "Prestations": "Video production, sound system, LED screens, lighting, and camera control room",
+            "format": "Conference",
+            "Realisation": "CGEM"
+        },
+        {
+            "id": 5,
+            "name": "AFIS 2024 ( AFRICA FINANCIAL SUMMIT )",
+            "images": ["/events/AFIS/2.jpeg", "/events/AFIS/1.jpeg", "/events/AFIS/3.jpeg", "/events/AFIS/4.jpeg"],
+            "Place": "HYATT REGENCY HOTEL CASABLANCA",
+            "date": "December 2024",
+            "Prestations": "Video production, sound system, LED screens, decoration, lighting, and camera control room",
+            "format": "Congress (Plenary, Committee rooms, BtoB area, Exhibition stands)",
+            "Realisation": "Jeune Afrique"
+        },
+        {
+            "id": 6,
+            "name": "MARRAKECH AIR SHOW 2024",
+            "images": ["/events/mas/4.jpeg", "/events/mas/2.jpeg", "/events/mas/3.jpeg", "/events/mas/1.jpeg", "/events/mas/5.jpeg", "/events/mas/6.jpeg", "/events/mas/7.jpeg", "/events/mas/8.jpeg", "/events/mas/9.jpeg", "/events/mas/10.jpeg"],
+            "Place": "Marrakech Military Air Base",
+            "date": "October 2024",
+            "Prestations": "Video production, sound system, LED screens, lighting, and camera control room",
+            "format": "Aviation Expo (Plenary, Exhibition areas)",
+            "Realisation": "Capital Events"
+        },
+        {
+            "id": 7,
+            "name": "PMI CONFERENCE",
+            "images": ["/events/PMI/1.jpeg", "/events/PMI/2.jpeg"],
+            "Place": "FAIRMONT ROYAL PAL MARRAKECH Hotel",
+            "date": "Septembre 2024",
+            "Prestations": "Video production, sound system, LED screens and lighting",
+            "format": "Conference",
+            "Realisation": "Stours"
+        },
+        {
+            "id": 8,
+            "name": "RIBXCAR",
+            "images": ["/events/RIBXCAR/1.jpeg", "/events/RIBXCAR/2.jpeg", "/events/RIBXCAR/3.jpeg", "/events/RIBXCAR/4.jpeg", "/events/RIBXCAR/5.jpeg"],
+            "Place": "TIGMIZA MARRAKECH Hotel",
+            "date": "September 2024",
+            "Prestations": "Video production, sound system, LED screens, translation equipment, lighting, and camera control room",
+            "format": "Conférence",
+            "Realisation": "M212"
+        },
+        {
+            "id": 9,
+            "name": "Royal Dinner on the Occasion of the Marrakech Film Festival",
+            "images": ["/events/diner/1.jpeg", "/events/diner/2.jpeg", "/events/diner/3.jpeg", "/events/diner/4.jpeg", "/events/diner/5.jpeg", "/events/diner/6.jpeg", "/events/diner/7.jpeg", "/events/diner/8.jpeg"],
+            "Place": "PALAIS EL BADII",
+            "date": "November 2024",
+            "Prestations": "Sound system, lighting, electric distribution",
+            "format": "Gala Dinner",
+            "Realisation": "Avant Scène"
+        },
+        {
+            "id": 10,
+            "name": "IFC (International Finance Corporation)",
+            "images": ["/events/IFC/1.jpeg", "/events/IFC/2.jpeg"],
+            "Place": "HYATT REGENCY CASABLANCA HOTEL",
+            "date": "December 2024",
+            "Prestations": "Video production, sound system, LED screens, streaming, lighting, and camera control room",
+            "format": "Conference",
+            "Realisation": "Green Attitude (GO Consulting)"
+        },
+        {
+            "id": 11,
+            "name": "CAF (54 MEMBER ASSOCIATIONS MEETING)",
+            "images": ["/events/CAF/1.jpeg", "/events/CAF/2.jpeg", "/events/CAF/3.jpeg", "/events/CAF/4.jpeg"],
+            "Place": "Hôtel Sofitel Marrakech",
+            "date": "December 2024",
+            "Prestations": "Video production, sound system, LED screens, streaming, lighting, and camera control room",
+            "format": "Conference",
+            "Realisation": "Avant Scène"
+        },
+        {
+            "id": 12,
+            "name": "INTERNATIONAL AFRICA DEVELOPMENT FORUM",
+            "images": ["/events/IADF/1.jpeg", "/events/IADF/3.jpeg", "/events/IADF/4.jpeg"],
+            "Place": "HYATT CASABLANCA HOTEL",
+            "date": "June 2024",
+            "Prestations": "Video production, sound system, LED screens, translation equipment, streaming, lighting, and camera control room",
+            "format": "Forum (Plenary, Exhibition stands, BtoBarea, Broadcast Room)",
+            "Realisation": "Capital Events"
+        },
+        {
+            "id": 13,
+            "name": "CAF AWARDS 2024",
+            "images": ["/events/CAFawards/1.jpeg", "/events/CAFawards/2.jpeg", "/events/CAFawards/3.jpeg", "/events/CAFawards/4.jpeg", "/events/CAFawards/5.jpeg", "/events/CAFawards/6.jpeg"],
+            "Place": "Palais des Congrès de Marrakech",
+            "date": "December 2024",
+            "Prestations": "Video production, sound system, LED screens, translation equipment and lighting",
+            "format": "Awards Ceremony",
+            "Realisation": "Avant Scène"
+        },
+        {
+            "id": 14,
+            "name": "ESSAOUIRA INVESTOR DAY",
+            "images": ["/events/essa/1.jpeg", "/events/essa/2.jpeg", "/events/essa/3.jpeg", "/events/essa/4.jpeg", "/events/essa/5.jpeg", "/events/essa/6.jpeg"],
+            "Place": "Sofitel Essaouira Mogador Hotel",
+            "date": "July 2024",
+            "Prestations": "Video production, sound system, LED screens,electric distribution, lighting, and camera control room",
+            "format": "Conference",
+            "Realisation": "Avant Scène"
+        },
+        {
+            "id": 15,
+            "name": "APIDE 2024 (Africa Pay & ID Expo)",
+            "images": ["/events/APIDE/5.jpeg", "/events/APIDE/2.jpeg", "/events/APIDE/3.jpeg", "/events/APIDE/4.jpeg", "/events/APIDE/1.jpeg", "/events/APIDE/6.jpeg"],
+            "Place": "Moulay Hassan Circuit, Marrakech",
+            "date": "October 2024",
+            "Prestations": "Video production, sound system, LED screens,electric distribution, lighting, camera control room and decoration",
+            "format": "Exhibition (Plenary, Committee rooms, Exhibition area, B2B areas, TV stage)",
+            "Realisation": "One Africa"
+        }
+    ],
+    "ES": [
+        {
+            "id": 0,
+            "name": "4ª CONFERENCIA MINISTERIAL MUNDIAL SOBRE SEGURIDAD VIAL",
+            "images": ["/events/gmcors/4.jpg", "/events/gmcors/2.jpg", "/events/gmcors/3.jpg", "/events/gmcors/1.jpg", "/events/gmcors/5.jpg", "/events/gmcors/6.jpg", "/events/gmcors/7.jpg"],
+            "Place": "PALACIO DE CONGRESOS MARRAKECH ( MOVENPICK )",
+            "date": "Febrero 2024",
+            "Prestations": "Vídeo, sonorización, pantalla LED, equipo de traducción, iluminación y control de cámaras",
+            "format": "Congreso (Plenaria, Salas de Subcomisiones, estudios de TV, stands)",
+            "Realisation": "Silver Tours"
+        },
+        {
+            "id": 1,
+            "images": ["/events/qatar/1.jpeg", "/events/qatar/3.jpeg", "/events/qatar/4.jpeg", "/events/qatar/5.jpeg", "/events/qatar/6.jpeg", "/events/qatar/7.jpeg", "/events/qatar/8.jpeg"],
+            "name": "QATAR AFRICA BUSINESS FORUM",
+            "Place": "Four Seasons Marrakech Hotel",
+            "date": "Noviembre 2024",
+            "Prestations": "Vídeo, sonorización, pantalla LED, equipo de traducción, iluminación y control de cámaras",
+            "format": "Conferencia",
+            "Realisation": "Capital Events"
+        },
+        {
+            "id": 2,
+            "name": "MIM FASHION SHOW 2024",
+            "images": ["/events/fashion/1.jpeg", "/events/fashion/2.jpeg", "/events/fashion/3.jpeg", "/events/fashion/4.jpeg", "/events/fashion/5.jpeg"],
+            "Place": "Oficina de Ferias y Exposiciones de Casablanca (OFEC)",
+            "date": "Noviembre 2024",
+            "Prestations": "Vídeo, sonorización, pantalla LED, iluminación, control de cámaras y Decoración",
+            "format": "Fashion Show",
+            "Realisation": "Casa Moda Academy"
+        },
+        {
+            "id": 3,
+            "name": "JORNADA NACIONAL DE LA INDUSTRIA",
+            "images": ["/events/cgem/1.jpeg", "/events/cgem/2.jpeg", "/events/cgem/3.jpeg", "/events/cgem/4.jpeg", "/events/cgem/5.jpeg"],
+            "Place": "Universidad Mohammed VI Politécnica de Benguerir",
+            "date": "Octubre 2024",
+            "Prestations": "Vídeo, sonorización, pantalla LED, equipo de traducción, iluminación y control de cámaras",
+            "format": "Conferencia",
+            "Realisation": "CGEM"
+        },
+        {
+            "id": 4,
+            "name": "ENCUENTRO EMPRESARIAL MARRUECOS – FRANCIA",
+            "images": ["/events/uir/1.jpeg", "/events/uir/2.jpeg", "/events/uir/3.jpeg"],
+            "Place": "Universidad Internacional de Rabat",
+            "date": "Octubre 2024",
+            "Prestations": "Vídeo, sonorización, pantalla LED, iluminación y control de cámaras",
+            "format": "Conferencia",
+            "Realisation": "CGEM"
+        },
+        {
+            "id": 5,
+            "name": "AFIS 2024 ( AFRICA FINANCIAL SUMMIT )",
+            "images": ["/events/AFIS/2.jpeg", "/events/AFIS/1.jpeg", "/events/AFIS/3.jpeg", "/events/AFIS/4.jpeg"],
+            "Place": "HYATT REGENCY HOTEL CASABLANCA",
+            "date": "Diciembre 2024",
+            "Prestations": "Vídeo, sonorización, pantalla LED, iluminación, control de cámaras y Decoración",
+            "format": "Congreso (Plenaria, Salas de Subcomisiones, Espacios B2B, Stands) ",
+            "Realisation": "Jeune Afrique"
+        },
+        {
+            "id": 6,
+            "name": "MARRAKECH AIR SHOW 2024",
+            "images": ["/events/mas/4.jpeg", "/events/mas/2.jpeg", "/events/mas/3.jpeg", "/events/mas/1.jpeg", "/events/mas/5.jpeg", "/events/mas/6.jpeg", "/events/mas/7.jpeg", "/events/mas/8.jpeg", "/events/mas/9.jpeg", "/events/mas/10.jpeg"],
+            "Place": "LA BASE AÉREA MILITAR DE MARRAKECH",
+            "date": "Octubre 2024",
+            "Prestations": "Vídeo, sonorización, pantalla LED, iluminación y control de cámaras",
+            "format": "Aviation Expo (Plenary, Exhibition areas)",
+            "Realisation": "Capital Events"
+        },
+        {
+            "id": 7,
+            "name": "PMI CONFERENCE",
+            "images": ["/events/PMI/1.jpeg", "/events/PMI/2.jpeg"],
+            "Place": "FAIRMONT ROYAL PAL MARRAKECH Hotel",
+            "date": "Septiembre 2024",
+            "Prestations": "Vídeo, sonorización, pantalla LED y iluminación",
+            "format": "Conferencia",
+            "Realisation": "Stours"
+        },
+        {
+            "id": 8,
+            "name": "RIBXCAR",
+            "images": ["/events/RIBXCAR/1.jpeg", "/events/RIBXCAR/2.jpeg", "/events/RIBXCAR/3.jpeg", "/events/RIBXCAR/4.jpeg", "/events/RIBXCAR/5.jpeg"],
+            "Place": "TIGMIZA MARRAKECH Hotel",
+            "date": "Septiembre 2024",
+            "Prestations": "Vídeo, sonorización, pantalla LED, equipo de traducción, iluminación y control de cámaras",
+            "format": "Conferencia",
+            "Realisation": "M212"
+        },
+        {
+            "id": 9,
+            "name": "Royal Dinner on the Occasion of the Marrakech Film Festival",
+            "images": ["/events/diner/1.jpeg", "/events/diner/2.jpeg", "/events/diner/3.jpeg", "/events/diner/4.jpeg", "/events/diner/5.jpeg", "/events/diner/6.jpeg", "/events/diner/7.jpeg", "/events/diner/8.jpeg"],
+            "Place": "PALAIS EL BADII",
+            "date": "Noviembre 2024",
+            "Prestations": "sonorización, iluminación, distribución eléctrica",
+            "format": "Cena de Gala",
+            "Realisation": "Avant Scène"
+        },
+        {
+            "id": 10,
+            "name": "IFC (International Finance Corporation)",
+            "images": ["/events/IFC/1.jpeg", "/events/IFC/2.jpeg"],
+            "Place": "HYATT REGENCY CASABLANCA HOTEL",
+            "date": "Diciembre 2024",
+            "Prestations": "Vídeo, sonorización, pantalla LED, streaming, iluminación y control de cámaras ",
+            "format": "Conferencia",
+            "Realisation": "Green Attitude (GO Consulting)"
+        },
+        {
+            "id": 11,
+            "name": "CAF (54 MEMBER ASSOCIATIONS MEETING)",
+            "images": ["/events/CAF/1.jpeg", "/events/CAF/2.jpeg", "/events/CAF/3.jpeg", "/events/CAF/4.jpeg"],
+            "Place": "Hôtel Sofitel Marrakech",
+            "date": "Diciembre 2024",
+            "Prestations": "Vídeo, sonorización, pantalla LED, streaming, iluminación y control de cámaras ",
+            "format": "Conferencia",
+            "Realisation": "Avant Scène"
+        },
+        {
+            "id": 12,
+            "name": "INTERNATIONAL AFRICA DEVELOPMENT FORUM",
+            "images": ["/events/IADF/1.jpeg", "/events/IADF/3.jpeg", "/events/IADF/4.jpeg"],
+            "Place": "HYATT CASABLANCA HOTEL",
+            "date": "Junio 2024",
+            "Prestations": "Vídeo, sonorización, pantalla LED, equipo de traducción, streaming, iluminación y control de cámaras",
+            "format": "Forum (Plenaria, stands, Espacios B2B, Sala de retransmisión)",
+            "Realisation": "Capital Events"
+        },
+        {
+            "id": 13,
+            "name": "CAF AWARDS 2024",
+            "images": ["/events/CAFawards/1.jpeg", "/events/CAFawards/2.jpeg", "/events/CAFawards/3.jpeg", "/events/CAFawards/4.jpeg", "/events/CAFawards/5.jpeg", "/events/CAFawards/6.jpeg"],
+            "Place": "Palais des Congrès de Marrakech",
+            "date": "Diciembre 2024",
+            "Prestations": "Video production, sound system, LED screens, translation equipment and lighting",
+            "format": "Awards Ceremony",
+            "Realisation": "Avant Scène"
+        },
+        {
+            "id": 14,
+            "name": "ESSAOUIRA INVESTOR DAY",
+            "images": ["/events/essa/1.jpeg", "/events/essa/2.jpeg", "/events/essa/3.jpeg", "/events/essa/4.jpeg", "/events/essa/5.jpeg", "/events/essa/6.jpeg"],
+            "Place": "Sofitel Essaouira Mogador Hotel",
+            "date": "Julio 2024",
+            "Prestations": "Vídeo, sonorización, pantalla LED, distribución eléctrica, iluminación y control de cámaras",
+            "format": "Conferencia",
+            "Realisation": "Avant Scène"
+        },
+        {
+            "id": 15,
+            "name": "APIDE 2024 (Africa Pay & ID Expo)",
+            "images": ["/events/APIDE/5.jpeg", "/events/APIDE/2.jpeg", "/events/APIDE/3.jpeg", "/events/APIDE/4.jpeg", "/events/APIDE/1.jpeg", "/events/APIDE/6.jpeg"],
+            "Place": "Moulay Hassan Circuit, Marrakech",
+            "date": "Octubre 2024",
+            "Prestations": "Vídeo, sonorización, pantalla LED, distribución eléctrica, iluminación, control de cámaras y Decoración",
+            "format": "Exposición (Plenaria, espacios de exposición, Salas de subcomisiones, Espacios B2B, Set de television)",
+            "Realisation": "One Africa"
+        }
+    ]
+}

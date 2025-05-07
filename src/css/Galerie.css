@@ -31,6 +31,15 @@
     padding: 50px 0;
     position: relative;
 }
+.EventsContainerref {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    /* padding: 50px 0; */
+    overflow-x: auto;
+    overflow-y: hidden;
+}
 .EventContent {
     display: grid;
     grid-template-areas: "image" "infos";
@@ -42,13 +51,66 @@
     width: 550px;
     transition: .1s;
 }
+.EventContenttext {
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .1s;
+    user-select: none;
+    display: flex;
+    position: relative;
+    width: 350px;
+}
+.caseOh {
+    background-color: var(--Ccyan);
+    width: 350px;
+    height: 200px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    left: 50%;
+    top: 100%;
+    z-index: 999;
+    transform: translateX(-50%) translateY(-50%);
+    overflow: hidden;
+    text-align: center;
+    opacity: 0;
+    transition: .4s;
+}
+.EventContenttext:hover .caseOh {
+    top: 50%;
+    opacity: 1;
+}
+.caseOh > h1 {
+    font-size: 15px;
+    font-family: Font3;
+    color: white;
+}
+.caseOh > p {
+    font-size: 13px;
+    font-family: Font3;
+    color: rgba(255, 255, 255, 0.7);
+}
+.caseOh > span {
+    background-color: white;
+    width: 30%;
+    height: 1px;
+    display: flex;
+}
 .EventContent:hover {
     background-color: rgba(218, 218, 218, 0.637);
 }
-.EventContent > img {
+.EventContent > img, .EventContenttext > img {
     grid-area: "image";
     width: 550px;
     height: 300px;
+    position: relative;
+}
+.EventContenttext > img {
+    width: 350px;
+    height: 200px;
 }
 .EventContent > .infoText {
     grid-area: "infos";
@@ -75,27 +137,28 @@
     overflow-y: scroll;
 }
 .PopUpContainer {
-    width: 75%;
-    height: 850px;
-    position: absolute;
-    z-index: 999;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
+    background-color: var(--CWhite);
+    width: 100%;
 }
 .evenTImage {
-    width: 100%;
+    width: 60%;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    display: flex;
     user-select: none;
-    overflow-y: hidden;
     position: relative;
 }
-.evenTImage > img {
+.imagesToFlow {
     width: 100%;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+}
+.imagesToFlow > img {
+    position: relative;
+    transition: 1s;
+    min-width: 100%;
+    transform: translateX(-0%);
 }
 .leftArrowS, .rightArrowS {
     content: '';
@@ -106,6 +169,7 @@
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
+    z-index: 10000;
     transition: .2s all;
     background-position: center;
     background-repeat: no-repeat;
@@ -142,21 +206,16 @@
     background-color: black;
 }
 .eventPopInfo {
-    background-color: rgba(0, 70, 128, 0.61);
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    width: 600px;
-    height: auto;
-    padding: 0 20px;
+    width: 50%;
 }
 .eventPopInfo > h1 {
     font-family: Font1;
     font-size: 20px;
-    color: white;
+    color: rgb(5, 129, 129);
 }
 .eventPopInfo > p {
-    color: white;
+    color: rgb(44, 44, 44);
+    /* margin: 0; */
     font-family: Font3;
     font-size: 15px;
 }
@@ -164,4 +223,48 @@
     display: none;
     width: auto;
     position: static !important;
+}
+#line {
+    display: flex;
+    background-color: rgb(5, 129, 129);
+    width: 30%;
+    height: 1px;
+    margin: 0 0 20px;
+}
+.eventInfoCont {
+    display: flex;
+    background-color: var(--CWhite);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.infosPopE {
+    padding: 0 0 0 5%;
+    font-family: Font3;
+    background-color: white;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+    width: 95%;
+}
+.duo > h3, .duo > p, .duo > h4 {
+    margin: 0;
+}
+.infosPopE > p {
+    margin: 0 0 10px 0;
+}
+.infosPopE > h1  {
+    font-family: Font1;
+    font-size: 30px;
+}
+.infosPopE > h2 {
+    font-family: Font2;
+    text-transform: capitalize;
+}
+#spaceIn {
+    font-size: 20px;
 }

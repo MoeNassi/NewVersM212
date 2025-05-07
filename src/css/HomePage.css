@@ -136,12 +136,20 @@ body, #root {
     color: rgb(0, 192, 192);
     font-family: Font1;
 }
+.customBar .languageC > p {
+    color: black;
+    font-family: Font3;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 15px;
+}
 .dropdownHidden p {
     margin: 10px 0;
 }
 .dropdown-content p {
     margin: 20px;
     line-height: 0;
+    white-space: nowrap;
 }
 .dropdown:hover .dropdown-content {
     display: flex;
@@ -458,4 +466,37 @@ body, #root {
 .up:hover, .down:hover {
     background-color: rgba(11, 153, 153, 0.651);
 }
-  
+.languageC {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.TopBar .languageC > p {
+    color: white;
+    font-family: Font1;
+    cursor: pointer;
+    transition: .3s;
+}
+.languageC > p:hover {
+    color: var(--Ccyan);
+}
+.TopBar .languageC > span {
+    background-color: white;
+    height: 20px;
+    width: 1px;
+}
+.customBar .languageCB {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+}
+.customBar .languageCB > p {
+    color: var(--Ccyan);
+    font-family: Font1;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 15px;
+}
